@@ -1,0 +1,7 @@
+<div ng-app="app" ng-controller="NavCtrl as nav">
+	<ul>
+		<li ng-repeat="item in nav.items" class="nav-item">
+			<a class="nav-link" href="{{ item.url }}">{{ item.name }}</a>
+		</li>
+	</ul>
+</div>

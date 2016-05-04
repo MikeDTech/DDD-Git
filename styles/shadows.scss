@@ -1,0 +1,161 @@
+//Position on axis, blur (or length, Blur, Spread or when the blur actualy starts
+//        X, Y, Blur, When the blur starts.. rgba(color)
+
+//##################  MDL Buttons ###################
+//
+
+
+$button-white: rgba(255,255,255,1);
+
+$button-blue: #4F66E2;
+$button-blue-hover: rgb(63, 81, 181);
+
+
+$button-lightblue: #0b92f9;
+$button-lightblue-hover: rgb(22, 119, 198);
+
+$button-orange: rgb(245, 136, 10);
+$button-orange-hover: #ffb100;
+
+$button-radius: 2px;
+
+.mdl-button {
+  border-radius: $button-radius;
+  color: black;
+  position: relative;
+  height: 36px;
+  margin: 8px;
+  min-width: 64px;
+  padding: 0 16px;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  overflow: hidden;
+  will-change: box-shadow;
+  transition: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1), background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  vertical-align: middle;
+}
+
+
+
+
+.mdl-button--blue {
+  background: $button-blue;
+  color: $button-white;
+
+  &:hover {
+	background: $button-blue-hover;
+  }
+}
+
+.mdl-button--lightblue {
+  background: $button-lightblue;
+  color: $button-white;
+
+  &:hover {
+	background: $button-lightblue-hover;
+  }
+}
+
+.mdl-button--orange {
+  background: $button-orange;
+  color: $button-white;
+
+  &:hover {
+	background: $button-orange-hover;
+  }
+}
+
+
+.mdl-button--raised {
+  box-shadow: 0 6px 3px 2px rgba(0, 0, 0, 0.50),
+  0 3px 6px 3px rgba(0, 0, 0, 0.25),
+  0 1px 1px 1px rgba(0, 0, 0, 0.15);
+
+  &:hover {
+	box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.15),
+	0 3px 6px 3px rgba(0, 0, 0, 0.25),
+	0 1px 1px 0 rgba(0, 0, 0, 0.50),
+	0 0 1px 0 transparent;
+  }
+}
+
+//.mdl-button--raised.mdl-button--orange:active {
+//  background-color: $button-orange; }
+//
+//.mdl-button--raised.mdl-button--orange:focus:not(:active) {
+//  background-color: $button-orange; }
+//
+//.mdl-button--raised.mdl-button--orange .mdl-ripple {
+//  background: white; }
+
+
+.mdl-button--raised--light {
+  box-shadow: 0 1px 1px 0 rgba(255, 255, 255, .30),
+  0 1px 1px 0 rgba(255, 255, 255, .25),
+  0 0 1px 1px rgba(255, 255, 255, .15);
+
+  &:hover {
+	box-shadow: 0 0 1px 2px rgba(255, 255, 255, .15),
+	0 1px 1px 1px rgba(255, 255, 255, .25),
+	0 0 1px 0 rgba(255, 255, 255, .32),
+	0 0 1px 1px rgba(255, 255, 255, .54);
+
+  }
+}
+
+
+.mdl-button-lg {
+  border: none;
+  color: black;
+  border-radius: 3px;
+  position: relative;
+  height: 36px;
+  margin: 8px;
+  min-width: 64px;
+  padding: 0 16px;
+  display: inline-block;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  overflow: hidden;
+  will-change: box-shadow;
+  transition: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1), background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  line-height: 36px;
+  vertical-align: middle;
+}
+
+.mdl-button-cta {
+  border-radius: 5px;
+  position: relative;
+  height: 75px;
+  margin: 8px;
+  min-width: 64px;
+  padding: 0 50px;
+  display: inline-block;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  overflow: hidden;
+  will-change: box-shadow;
+  transition: text-shadow 0.2s cubic-bezier(0.4, 0, 1, 1), text-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  line-height: 36px;
+  vertical-align: middle;
+}

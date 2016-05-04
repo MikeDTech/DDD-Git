@@ -1,0 +1,77 @@
+/* ==========================================================================
+Nav
+=========================================================================== */
+/* --------------------------------------------------------------------------
+Nav Variables
+-------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------
+Nav Styles
+-------------------------------------------------------------------------- */
+nav {
+  background: #2D3B88;
+  padding: 0;
+  margin: 0;
+  box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.18); }
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+  nav li {
+    transition: all 0.5s ease;
+    display: inline-block; }
+  nav a:link, nav a:visited {
+    color: white;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    display: block;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    transition: all 0.5s ease; }
+  nav a:hover, nav a:focus {
+    color: rgba(255, 255, 255, 0.7);
+    transition: all 0.5s ease; }
+
+.navbar-brand {
+  margin-left: .5rem;
+  color: rgba(255, 255, 255, 0.7);
+  float: left;
+  padding-top: .3rem;
+  padding-bottom: .25rem;
+  margin-right: 1rem; }
+  .navbar-brand a:link, .navbar-brand a:visited, .navbar-brand a:hover, .navbar-brand a:active {
+    border-bottom: none;
+    text-transform: capitalize;
+    text-decoration: none; }
+  .navbar-brand p {
+    color: white;
+    font-size: 1.3rem;
+    padding: 0;
+    margin: 0; }
+  .navbar-brand h1 {
+    color: white;
+    font-size: 1.3rem;
+    padding: 0;
+    margin: 0; }
+  .navbar-brand span {
+    color: rgba(255, 255, 255, 0.7); }
+
+.navbar-nav .nav-link {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  /*centers it vertically*/ }
+
+.navbar {
+  padding: 0;
+  margin: 0; }
+
+.navbar-nav .nav-item {
+  float: none; }
+  .navbar-nav .nav-item a:link, .navbar-nav .nav-item a:visited {
+    border-bottom: 1px dotted white; }
+  .navbar-nav .nav-item a:hover, .navbar-nav .nav-item a:focus {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.7); }
+
+/*# sourceMappingURL=nav.css.map */

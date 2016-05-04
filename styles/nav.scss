@@ -1,0 +1,110 @@
+/* ==========================================================================
+Nav
+=========================================================================== */
+
+/* --------------------------------------------------------------------------
+Nav Variables
+-------------------------------------------------------------------------- */
+$nav-bg: #2D3B88; //rgb(31, 42, 67);
+$nav-color-text:  rgba(255,255,255, .70);
+$nav-color-link: rgba(255,255,255, 1);
+$nav-color-hover: rgba(255,255,255, 0.70);
+$nav-box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.18);
+
+$nav-font-size: 0.8rem;
+
+$trans: all 0.5s ease;
+
+/* --------------------------------------------------------------------------
+Nav Styles
+-------------------------------------------------------------------------- */
+nav {
+  background: $nav-bg;
+  padding: 0;
+  margin: 0;
+  box-shadow: $nav-box-shadow;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  li {
+    transition: $trans;
+    display: inline-block;
+  }
+
+
+  a:link, a:visited {
+    color: $nav-color-link;
+    font-size: $nav-font-size;
+    text-transform: uppercase;
+    display: block;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    transition: $trans;
+  }
+
+  a:hover, a:focus {
+    color: $nav-color-hover;
+    transition: $trans;
+    }
+}
+////////////////////////////////////////////////////////////
+.navbar-brand {
+  margin-left: .5rem;
+  color: $nav-color-text;
+  float: left;
+  padding-top: .3rem;
+  padding-bottom: .25rem;
+  margin-right: 1rem;
+
+  a:link, a:visited, a:hover, a:active {
+    border-bottom: none;
+    text-transform: capitalize;
+    text-decoration: none;
+  }
+
+  p {
+	color: white;
+	font-size: 1.3rem;
+	padding: 0;
+	margin: 0;
+  }
+
+  h1 {
+	color: white;
+	font-size: 1.3rem;
+	padding: 0;
+	margin: 0;
+  }
+  span {
+    color: $nav-color-text;
+  }
+}
+////////////////////////////////////////////////////////////
+.navbar-nav .nav-link {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center; /*centers it vertically*/
+}
+
+.navbar {
+    padding: 0;
+  	margin: 0;
+}
+
+.navbar-nav .nav-item {
+  float: none;
+
+  a:link, a:visited {
+    border-bottom: 1px dotted $nav-color-link;
+  }
+
+  a:hover, a:focus {
+    border-bottom: 1px solid $nav-color-hover;
+  }
+}
+////////////////////////////////////////////////////////////

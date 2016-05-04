@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="b346eea0-b76f-48f0-a07d-6cc53c193034" name="DesignDevelopDeploy" url="http://dreamdevelopdeploy.com/DDD">
+        <fileTransfer host="ftp.dreamdevelopdeploy.com" port="21" rootFolder="/public_html/DDD/" password="dfc7dfe8dfeedf9cdf98df9cdf9cdffadf8b" username="dreawtgk">
+          <advancedOptions>
+            <advancedOptions compatibilityMode="true" controlEncoding="" dataProtectionLevel="Private" showHiddenFiles="true" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
