@@ -119,19 +119,21 @@ img {
   background-size: cover; }
 
 .demo-card-square.mdl-card {
-  width: 350px;
-  height: 350px;
-  margin: 0 auto;
-  /*centers it horizontally*/
+  width: 95%;
+  height: inherit;
+  /* margin: 0 auto; */
   align-items: center;
-  /* centers vertically */
   display: flex; }
 
 .demo-card-square > .mdl-card__title {
   color: #fff;
   width: 100%;
   height: 150px;
-  background: #3f51b5; }
+  background: #3f51b5;
+  align-self: center;
+  /* centers vertically */
+  display: flex;
+  text-align: center; }
 
 .demo-card-square > .mdl-card__supporting-text {
   color: rgba(0, 0, 0, 0.87);
@@ -141,7 +143,7 @@ img {
   color: #fff; }
 
 .demo-card-square > .mdl-card__title.web-design {
-  background: url("../img/web-design.png") bottom right 15% no-repeat #3f51b5; }
+  background: url("../img/dream.png") bottom right 15% no-repeat #3f51b5; }
 
 .demo-card-square > .mdl-card__title.web-applications {
   background: url("../img/web-applications.png") bottom right 15% no-repeat #3f51b5; }
