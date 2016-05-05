@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0b641cdf-7ef3-4bfa-9676-5ff9910cb4ab" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/base.css" afterPath="$PROJECT_DIR$/styles/base.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/base.css.map" afterPath="$PROJECT_DIR$/styles/base.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/base.scss" afterPath="$PROJECT_DIR$/styles/base.scss" />
     </list>
     <ignored path="DDD.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -352,7 +347,7 @@
       <workItem from="1462360681631" duration="9925000" />
       <workItem from="1462378693725" duration="11631000" />
       <workItem from="1462394389880" duration="9090000" />
-      <workItem from="1462418481514" duration="856000" />
+      <workItem from="1462418481514" duration="1506000" />
     </task>
     <servers>
       <Generic shared="false" url="">
@@ -440,7 +435,7 @@
     </servers>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39850000" />
+    <option name="totallyTimeSpent" value="40500000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
