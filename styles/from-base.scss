@@ -1,0 +1,185 @@
+/* Media Queries */
+
+@media screen and ( min-width : 991px ) {
+
+  .section-content {     /* Vertically centers feature-content div on devices 991px and above*/
+	display: flex;
+	align-items: center;
+  }
+}
+
+
+
+
+
+/*
+	SkyApp Bootstrap Sass Theme
+	These are all files you manually create to override bootstraps files
+*/
+
+/* BASE - Base styles, variables, mixins, etc */
+
+//@import 'base/variables.scss';
+@import 'base/mixins.scss';
+//@import 'base/normalize.scss';
+//@import 'base/base.scss';
+
+
+
+/* Font Colors */
+
+$base-font-size: 16px;
+$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$base-font-color: rgba(108, 111, 115, 1.0);
+
+
+/* Background Colors */
+
+$primary-color: #167AC6; //#00aff0;
+$secondary-color:#7fba00;
+$light-color:#e4eef2;
+$dark-color:#2b5464;
+
+
+/* Showcase Area */
+
+$showcase-height:400px;
+$showcase-image:'img/showcase.jpg';
+
+#section-showcase {
+
+  // padding: 30px 0;
+  display: flex;
+  align-items: center; /*centers it vertically*/
+  padding: 1rem 0;
+  position: relative;
+  margin: 0 auto;
+}
+
+.showcase-content {
+  padding: 2.5rem;
+  display: flex;
+  align-items: center; /*centers it vertically*/
+  position: relative;
+  margin: 0 auto;
+}
+
+//.section-primary, .section-primary-a, .section-primary-b {
+//  background: #00aff0;
+//  color: #ffffff;
+//  padding: 30px 0;
+//}
+
+//.page-header {
+//padding-bottom: 9px;
+//margin: 40px 0 20px;
+// border-bottom: 1px solid #eee;
+//color: white;
+//}
+
+//.h2 {
+//  font-size: 30px;
+//color: white;
+// }
+
+/* Blocks */
+
+.block{
+  padding: 1.5rem;
+  margin-bottom:1rem;
+
+  h3{
+	margin-top:0;
+	padding-top:0;
+  }
+
+  iframe{
+	width:100%;
+  }
+}
+
+.block-primary{
+  @extend .block;
+  @include add-background($primary-color);
+}
+
+.block-secondary{
+  @extend .block;
+  @include add-background($secondary-color);
+}
+
+.block-light{
+  @extend .block;
+  @include add-background($light-color);
+}
+
+.block-dark{
+  @extend .block;
+  @include add-background($dark-color);
+}
+
+.block-center{
+  text-align:center !important;
+}
+
+.block-image img{
+  width:100%;
+}
+
+.block-border{
+  @include add-border(1px, #cccccc, all);
+}
+
+.block-primary-head{
+  h3{
+	padding:15px 5px 15px 10px;
+	@include add-background($primary-color);
+	margin:0;
+	font-size:18px
+  }
+
+  .block-content{
+	@include add-border(1px, $primary-color, all);
+	padding:10px;
+  }
+}
+
+.block-icon {
+
+  h3 {
+	color: rgba(255, 255, 255, 0.87);
+	padding: 0;
+	margin: 0;
+  }
+
+  p {
+	color: rgba(255, 255, 255, .87);
+	line-height: 1.5rem;
+	padding-bottom: 50px;
+  }
+
+  .icon {
+	float: left;
+	width: 20%;
+	margin-top: 10px;
+
+  }
+
+  .icon-content {
+	float: left;
+	width: 80%;
+	color: white;
+
+	h3 {
+	  color: rgba(255, 255, 255, .87);
+	  font-size: 24px;
+	}
+
+	h4 {
+	  font-size: 16px;
+	  font-style: italic;
+	  margin-top: 2px;
+	  color: rgba(255, 255, 255, 1);
+	}
+  }
+}

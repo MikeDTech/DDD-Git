@@ -1,0 +1,89 @@
+From BASE.SCSS**************************************************************
+/* ==========================================================================
+ Body Styles
+========================================================================== */
+
+@mixin firefox-message($selector) {
+  body.firefox #{$selector}:before {
+	content: "Hi, Firefox users!";
+  }
+}
+
+/* ==========================================================================
+ Styles
+========================================================================== */
+//@include firefox-message(".header");
+
+//------------------------------------------
+//transparentize($color, $amount);
+// transparentize(rgba(0, 0, 0, 0.5), 0.1) => rgba(0, 0, 0, 0.4)
+
+
+//opacify($color, $amount);
+//opacify(rgba(0, 0, 0, 0.5), 0.1) => rgba(0, 0, 0, 0.6)
+
+//font: italic small-caps normal 13px/150% Arial, Helvetica, sans-serif;
+//$font: $font-weight $font-size/$line-height $font-family;
+
+// rgba($color, $alpha)
+
+// http://www.impressivewebs.com/css-font-shorthand-property-cheat-sheet/
+
+.btn-size {
+  width: 100%;
+  max-width: 27rem;
+  height: 3.2rem;
+  margin: inherit;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center; /*centers it vertically*/
+}
+
+.btn-blue {
+   background: #167AC6; //#5BC0DE;
+   border-color: #22557B;
+   text-transform: uppercase;
+   color: white;
+   font-weight: 500;
+   padding: .75rem 1.5rem;
+   font-size: 1.5rem;
+   line-height: 1.33333;
+   border-radius: 0.6rem;
+ }
+
+.btn-green {
+  text-transform: uppercase;
+  color: white;
+  font-weight: 500;
+  padding: .75rem 1.5rem;
+  font-size: 1.5rem;
+  line-height: 1.33333;
+  border-radius: 0.6rem;
+}
+
+.image-overlay {
+  background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(0,0,0, 1) 100%), url("../img/stage-image.jpg");
+  height: 400px;
+  background-size: cover;
+}
+
+
+ END BASE.SCSS****************************************************************
+
+
+
+
+ //NAV
+ //rgb(31, 42, 67); < Old Header Background
+
+
+ HTML Comments
+ <!-- UI/UX Experience #2 Feature Section -->
+ <!-- http://www.fastcodesign.com/3032719/ui-ux-who-does-what-a-designers-guide-to-the-tech-industry -->
+
+ <!--<img src="img/iphone-1.png" alt="iPhone">-->
+
+ <!-- Screenshot From http://trypap.com -->
+ 				<div class="col-lg-5 col-hidden-md-down">
+ 					<!--<img src="img/macbook.png" alt="Macbook">-->

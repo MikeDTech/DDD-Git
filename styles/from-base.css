@@ -1,0 +1,102 @@
+/* Media Queries */
+@media screen and (min-width: 991px) {
+  .section-content {
+    /* Vertically centers feature-content div on devices 991px and above*/
+    display: flex;
+    align-items: center; } }
+/*
+	SkyApp Bootstrap Sass Theme
+	These are all files you manually create to override bootstraps files
+*/
+/* BASE - Base styles, variables, mixins, etc */
+/* Mixins */
+/* Font Colors */
+/* Background Colors */
+/* Showcase Area */
+#section-showcase {
+  display: flex;
+  align-items: center;
+  /*centers it vertically*/
+  padding: 1rem 0;
+  position: relative;
+  margin: 0 auto; }
+
+.showcase-content {
+  padding: 2.5rem;
+  display: flex;
+  align-items: center;
+  /*centers it vertically*/
+  position: relative;
+  margin: 0 auto; }
+
+/* Blocks */
+.block, .block-primary, .block-secondary, .block-light, .block-dark {
+  padding: 1.5rem;
+  margin-bottom: 1rem; }
+  .block h3, .block-primary h3, .block-secondary h3, .block-light h3, .block-dark h3 {
+    margin-top: 0;
+    padding-top: 0; }
+  .block iframe, .block-primary iframe, .block-secondary iframe, .block-light iframe, .block-dark iframe {
+    width: 100%; }
+
+.block-primary {
+  background: #167AC6;
+  color: #ffffff; }
+
+.block-secondary {
+  background: #7fba00;
+  color: #ffffff; }
+
+.block-light {
+  background: #e4eef2;
+  color: #666666; }
+
+.block-dark {
+  background: #2b5464;
+  color: #ffffff; }
+
+.block-center {
+  text-align: center !important; }
+
+.block-image img {
+  width: 100%; }
+
+.block-border {
+  border: 1px solid #cccccc; }
+
+.block-primary-head h3 {
+  padding: 15px 5px 15px 10px;
+  background: #167AC6;
+  color: #ffffff;
+  margin: 0;
+  font-size: 18px; }
+.block-primary-head .block-content {
+  border: 1px solid #167AC6;
+  padding: 10px; }
+
+.block-icon h3 {
+  color: rgba(255, 255, 255, 0.87);
+  padding: 0;
+  margin: 0; }
+.block-icon p {
+  color: rgba(255, 255, 255, 0.87);
+  line-height: 1.5rem;
+  padding-bottom: 50px; }
+.block-icon .icon {
+  float: left;
+  width: 20%;
+  margin-top: 10px; }
+.block-icon .icon-content {
+  float: left;
+  width: 80%;
+  color: white; }
+  .block-icon .icon-content h3 {
+    color: rgba(255, 255, 255, 0.87);
+    font-size: 24px; }
+  .block-icon .icon-content h4 {
+    font-size: 16px;
+    font-style: italic;
+    margin-top: 2px;
+    color: white; }
+
+/*# sourceMappingURL=from-base.css.map */

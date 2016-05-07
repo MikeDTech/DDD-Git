@@ -3,17 +3,21 @@
 ========================================================================== */
 $contact-button-bg: #167AC6;
 
-#feature-subscribe {
+#section-subscribe {
   background: url('../img/keyboard-bg.jpg') no-repeat center center;
   background-size: cover;
   color: white;
- // height: 100%;
   width: 100%;
   display: flex;
   align-items: center; /*centers it vertically*/
 
   h6 {
 	color: rgba(255, 255, 255, 0.87);
+  }
+
+  p.intro {
+    font-size: 1.25rem;
+    font-weight: 300;
   }
 
   input[type=text], textarea {

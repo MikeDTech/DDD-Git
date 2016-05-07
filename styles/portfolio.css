@@ -81,16 +81,8 @@
   background-position: bottom right;
   margin-left: 10px; }
 
-.top-padding1 {
+.carosel-button-padding {
   padding-top: 6rem;
-  align-self: center; }
-
-.top-padding2 {
-  padding-top: 6rem;
-  align-self: center; }
-
-.top-padding3 {
-  padding-bottom: 6rem;
   align-self: center; }
 
 .top-padding-images {

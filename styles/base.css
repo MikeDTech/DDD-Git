@@ -1,15 +1,12 @@
 /* ==========================================================================
- Body Styles
+ Base Styles
 ========================================================================== */
-/* ==========================================================================
- Styles
-========================================================================== */
-@import url("http://fonts.googleapis.com/css?family=Roboto");
 /* --------------------------------------------------------------------------
- Variables
+Body / Default Styles
 -------------------------------------------------------------------------- */
+@import url("http://fonts.googleapis.com/css?family=Roboto:300,400,400italic,500,500italic,700,700italic|Material+Icons");
 /* ---------------------------------------------------------------------------
- HTML / BODY
+ HTML / BODY ELEMENTS
 -------------------------------------------------------------------------- */
 html,
 body {
@@ -53,80 +50,43 @@ img {
 .blockquote-footer {
   margin: 1rem 0 0; }
 
+/*-------------------------------------------------------------------
+ Stage
+------------------------------------------------------------------- */
 #stage {
-  background: #1f7e9a;
   background: linear-gradient(to bottom, #22557b 0%, rgba(31, 126, 154, 0.54) 100%), url("../img/stage-image.jpg");
   background-size: cover;
   color: white;
   height: 100%;
   width: 100%;
   display: flex;
-  align-items: center;
-  /*centers it vertically*/ }
+  align-items: center; }
 
-#stage-caption {
+.stage-caption {
   font-size: 1.3rem;
   font-weight: 300;
   margin: 0 auto;
-  /*centers it horizontally*/
   text-align: center; }
-  #stage-caption h1 {
+  .stage-caption h1 {
     color: rgba(255, 255, 255, 0.7);
     font-weight: bold;
     text-transform: uppercase;
     font-size: 4rem;
     margin-top: 50px; }
-  #stage-caption h3 {
+  .stage-caption h3 {
     font-size: 1.4rem;
     color: white;
     font-weight: 500;
     padding-bottom: .8rem; }
 
-.btn-size {
-  width: 100%;
-  max-width: 27rem;
-  height: 3.2rem;
-  margin: inherit;
-  text-transform: uppercase;
-  font-size: 1.5rem;
-  display: flex;
-  align-items: center;
-  /*centers it vertically*/ }
-
-.btn-blue {
-  background: #167AC6;
-  border-color: #22557B;
-  text-transform: uppercase;
-  color: white;
-  font-weight: 500;
-  padding: .75rem 1.5rem;
-  font-size: 1.5rem;
-  line-height: 1.33333;
-  border-radius: 0.6rem; }
-
-.btn-green {
-  text-transform: uppercase;
-  color: white;
-  font-weight: 500;
-  padding: .75rem 1.5rem;
-  font-size: 1.5rem;
-  line-height: 1.33333;
-  border-radius: 0.6rem; }
-
-.image-overlay {
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, black 100%), url("../img/stage-image.jpg");
-  height: 400px;
-  background-size: cover; }
-
-.demo-card-square.mdl-card {
+.card-section.mdl-card {
   width: 95%;
   height: inherit;
-  /* margin: 0 auto; */
   align-items: center;
   display: flex; }
 
-.demo-card-square > .mdl-card__title {
-  color: #fff;
+.card-section .mdl-card__title {
+  color: white;
   width: 100%;
   height: 150px;
   background: #3f51b5;
@@ -134,165 +94,71 @@ img {
   /* centers vertically */
   display: flex;
   text-align: center; }
-
-.demo-card-square > .mdl-card__supporting-text {
+.card-section .mdl-card__supporting-text {
   color: rgba(0, 0, 0, 0.87);
   height: 200px; }
+.card-section .mdl-card__menu {
+  color: white; }
 
-.demo-card-square > .mdl-card__menu {
-  color: #fff; }
-
-.demo-card-square > .mdl-card__title.web-design {
-  background: url("../img/dream.png") bottom right 15% no-repeat #3f51b5; }
-
-.demo-card-square > .mdl-card__title.web-applications {
-  background: url("../img/web-applications.png") bottom right 15% no-repeat #3f51b5; }
-
-.demo-card-square > .mdl-card__title.web-hosting {
-  background: url("../img/web-hosting.png") bottom right 15% no-repeat #3f51b5; }
-
-.feature-content {
+.section-spacing {
   padding: 8rem 0;
   overflow: hidden; }
-  .feature-content img {
+  .section-spacing img {
     margin-bottom: -8rem; }
 
-.feature-dark {
+.section-center {
+  display: flex;
+  align-items: center;
+  /*centers it vertically*/ }
+  .section-center img {
+    position: relative;
+    margin: 0 auto;
+    /*centers it horizontially*/ }
+
+.section-dark {
   background: #1f2a43;
   color: white; }
-  .feature-dark h6 {
+  .section-dark h6 {
     color: rgba(255, 255, 255, 0.7); }
-  .feature-dark h2 {
+  .section-dark h2 {
     color: white; }
 
-.feature-alt {
+.section-alt {
   background: rgba(0, 0, 0, 0.05); }
 
-.feature-card-spacing {
-  padding-top: 10rem; }
+.section-content {
+  display: flex;
+  align-items: center; }
 
-#feature-four .feature-content {
+#section-four .section-content {
   padding: 0; }
 
-#feature-five img {
+#section-five img {
   margin-top: 2rem; }
 
-#main-footer {
-  background: #262F36;
-  color: white;
-  padding: 6rem 0;
-  font-size: 0.8rem; }
-  #main-footer h5, #main-footer h6 {
-    color: white; }
-  #main-footer a {
-    color: rgba(255, 255, 255, 0.54); }
-
-.feature-center img {
-  display: flex;
-  align-items: center;
-  /*centers it vertically*/
-  position: relative;
-  margin: 0 auto; }
-
-/* Media Queries */
-@media screen and (min-width: 991px) {
-  .feature-content {
-    /* Vertically centers feature-content div on devices 991px and above*/
-    display: flex;
-    align-items: center; } }
-/*
-	SkyApp Bootstrap Sass Theme
-	These are all files you manually create to override bootstraps files
-*/
-/* BASE - Base styles, variables, mixins, etc */
-/* Mixins */
-/* Font Colors */
-/* Background Colors */
-/* Showcase Area */
-#section-showcase {
-  display: flex;
-  align-items: center;
-  /*centers it vertically*/
-  padding: 1rem 0;
-  position: relative;
-  margin: 0 auto; }
-
-.showcase-content {
-  padding: 2.5rem;
-  display: flex;
-  align-items: center;
-  /*centers it vertically*/
-  position: relative;
-  margin: 0 auto; }
-
-/* Blocks */
-.block, .block-primary, .block-secondary, .block-light, .block-dark {
-  padding: 1.5rem;
-  margin-bottom: 1rem; }
-  .block h3, .block-primary h3, .block-secondary h3, .block-light h3, .block-dark h3 {
-    margin-top: 0;
-    padding-top: 0; }
-  .block iframe, .block-primary iframe, .block-secondary iframe, .block-light iframe, .block-dark iframe {
-    width: 100%; }
-
-.block-primary {
-  background: #167AC6;
-  color: #ffffff; }
-
-.block-secondary {
-  background: #7fba00;
-  color: #ffffff; }
-
-.block-light {
-  background: #e4eef2;
-  color: #666666; }
-
-.block-dark {
-  background: #2b5464;
-  color: #ffffff; }
-
-.block-center {
-  text-align: center !important; }
-
-.block-image img {
-  width: 100%; }
-
-.block-border {
-  border: 1px solid #cccccc; }
-
-.block-primary-head h3 {
-  padding: 15px 5px 15px 10px;
-  background: #167AC6;
-  color: #ffffff;
-  margin: 0;
-  font-size: 18px; }
-.block-primary-head .block-content {
-  border: 1px solid #167AC6;
-  padding: 10px; }
-
-.block-icon h3 {
-  color: rgba(255, 255, 255, 0.87);
-  padding: 0;
-  margin: 0; }
-.block-icon p {
-  color: rgba(255, 255, 255, 0.87);
-  line-height: 1.5rem;
-  padding-bottom: 50px; }
-.block-icon .icon {
-  float: left;
-  width: 20%;
-  margin-top: 10px; }
-.block-icon .icon-content {
-  float: left;
-  width: 80%;
-  color: white; }
-  .block-icon .icon-content h3 {
-    color: rgba(255, 255, 255, 0.87);
-    font-size: 24px; }
-  .block-icon .icon-content h4 {
-    font-size: 16px;
-    font-style: italic;
-    margin-top: 2px;
-    color: white; }
+#footer {
+  background: #2D3B88;
+  color: rgba(255, 255, 255, 0.7);
+  padding: .6rem 0;
+  font-size: 0.6rem;
+  text-align: right; }
+  #footer hr {
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid #0B92F9; }
+  #footer h5 {
+    padding: 0;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.8rem; }
+    #footer h5 a {
+      color: rgba(255, 255, 255, 0.87);
+      font-size: 0.8rem; }
+  #footer h6 {
+    padding-top: .4rem;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.6rem; }
+    #footer h6 a {
+      color: rgba(255, 255, 255, 0.87);
+      font-size: 0.5rem; }
 
 /*# sourceMappingURL=base.css.map */
