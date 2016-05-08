@@ -28,8 +28,8 @@ $hover: rgba(255,255,255,1);
 $font-style:'';
 $font-variant: '';
 $font-weight: normal;
-$font-size: 1rem;
-$font-line-height: 1.5rem;
+$font-size: 16px;
+$font-line-height: 24px;
 $font-family: $family,sans-serif;
 
 
@@ -124,35 +124,47 @@ $s-stage-text: rgb(255,255,255);
   background: linear-gradient(to bottom, rgba($s-stage-gradient1, $s-stage-gradient1-opacity) 0%, rgba($s-stage-gradient2, $s-stage-gradient2-opacity) 100%), url("../img/stage-image.jpg");
   background-size: cover;
   color: $s-stage-text;
-  height: 100%;
-  width: 100%;
   display: flex;
+  width: 100%;
+  height: 100%;
   align-items: center; // centers y-axis
-}
 
-.stage-caption {
-  font-size: 1.3rem;
-  font-weight: 300;
-  margin: 0 auto; // centers x-axis
-  text-align: center;
+  .stage-caption {
+	font-size: 1.3rem;
+	//font-weight: 300;
+	margin: 0 auto; // centers x-axis
+	text-align: center;
 
-  h1 {
-	color: rgba($s-stage-text, .70);
-	font-weight: bold;
-	text-transform: uppercase;
-	font-size: 4rem;
-	margin-top: 50px;
+	h1 {
+	  color: rgba($s-stage-text, .70);
+	  font-weight: bold;
+	  text-transform: uppercase;
+	  font-size: 4rem;
+	  margin-top: 50px;
+	}
+
+	h3 {
+	  font-size: 1.4rem;
+	  color: $s-stage-text;
+	  font-weight: 500;
+	  padding-bottom: .8rem;
+	}
+
+	#cta-form {
+	  display: flex;
+	  width: 100%;
+	  height: 100%;
+	  margin: 0 auto; // centers x-axis
+	  background: rgba(11, 146, 249, 0.18);
+	  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.16);
+	  z-index: 100;
+	  margin-bottom: 2rem;
+	  padding: 1rem;
+
+	}
   }
-
-  h3 {
-	font-size: 1.4rem;
-	color: $s-stage-text;
-	font-weight: 500;
-	padding-bottom: .8rem;
-  }
-
 }
-
+//////////////////////////////////////
 
 // Card Section
 #card-section-id {
@@ -163,23 +175,27 @@ $s-stage-text: rgb(255,255,255);
 	 height: inherit;
 	 align-items: center;
 	 display: flex;
+  margin: 0 auto; // centers x-axis
  }
 
 .card-section {
 
   .mdl-card__title {
+	display: flex;
 	color: white;
 	width: 100%;
-	height: 150px;
-	background: rgb(63, 81, 181);
-	align-self: center; /* centers vertically */
-	display: flex;
+	height: 100px;
+	margin: 0 auto; // centers x-axis
 	text-align: center;
+	background: $header-bk;//rgb(63, 81, 181);
+	align-items: center; /* centers vertically */
   }
 
   .mdl-card__supporting-text {
 	color: $text;
 	height: 200px;
+	align-items: center;
+	display: flex;
   }
 
   .mdl-card__menu {
@@ -237,6 +253,8 @@ $s-stage-text: rgb(255,255,255);
   align-items: center;
 }
 
+
+
 #section-four .section-content {
   padding: 0;
 }
@@ -281,8 +299,112 @@ $s-stage-text: rgb(255,255,255);
   }
 }
 
-
+//.section-next-btn {
+//  align-items: flex-start | flex-end | center | baseline | stretch;
+//}
 
 #section-one {
   //color: #6c6f73;
 }
+
+.flex-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+
+.flex-item {
+  background: tomato;
+  padding: 5px;
+  width: 200px;
+  height: 150px;
+  margin-top: 10px;
+
+  line-height: 150px;
+  color: white;
+  font-weight: bold;
+  font-size: 3em;
+  text-align: center;
+}
+/* Example Boxes Spaced Evenly
+<div class="flex-container">
+<div class="flex-item">1</div>
+<div class="flex-item">2</div>
+<div class="flex-item">3</div>
+<div class="flex-item">4</div>
+<div class="flex-item">5</div>
+<div class="flex-item">6</div>
+</div>
+*/
+
+/* ------------------ http://codepen.io/team/css-tricks/pen/YqaKYR ------------ */
+//.navigation {
+//  list-style: none;
+//  margin: 0;
+//
+//  background: deepskyblue;
+//
+//  display: -webkit-box;
+//  display: -moz-box;
+//  display: -ms-flexbox;
+//  display: -webkit-flex;
+//  display: flex;
+//
+//  -webkit-flex-flow: row wrap;
+//  justify-content: flex-end;
+//
+//  a {
+//	text-decoration: none;
+//	display: block;
+//	padding: 1em;
+//	color: white;
+//  }
+//
+//  a:hover {
+//	background: darken(deepskyblue, 2%);
+//  }
+//}
+//
+//@media all and (max-width: 800px) {
+//  .navigation {
+//	justify-content: space-around;
+//  }
+//}
+//
+//@media all and (max-width: 600px) {
+//  .navigation {
+//	-webkit-flex-flow: column wrap;
+//	flex-flow: column wrap;
+//	padding: 0;
+//
+//	a {
+//	  text-align: center;
+//	  padding: 10px;
+//	  border-top: 1px solid rgba(255, 255, 255, 0.3);
+//	  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+//	}
+//
+//	li:last-of-type a {
+//	  border-bottom: none;
+//	}
+//  }
+//}
+
+/*
+<ul class="navigation">
+<li><a href="#">Home</a></li>
+<li><a href="#">About</a></li>
+<li><a href="#">Products</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
+*/

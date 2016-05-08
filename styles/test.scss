@@ -1,0 +1,102 @@
+/* Test Items *////////////////////////////////////////////////*/
+//--------------------------------------------
+$type: monster;
+p {
+  @if $type == ocean {
+	color: blue;
+  } @else if $type == matador {
+	color: red;
+  } @else if $type == monster {
+	color: green;
+  } @else {
+	color: black;
+  }
+}
+//COMPILES TO///////////
+p {
+  color: green;
+}
+
+//--------------------------------------------
+//////////////
+@each $animal, $color, $cursor in (puma, black, default),
+		(sea-slug, blue, pointer),
+		(egret, white, move) {
+  .#{$animal}-icon {
+	background-image: url('/images/#{$animal}.png');
+	border: 2px solid $color;
+	cursor: $cursor;
+  }
+}
+//COMPILES TO///////////
+
+.puma-icon {
+  background-image: url('/images/puma.png');
+  border: 2px solid black;
+  cursor: default; }
+.sea-slug-icon {
+  background-image: url('/images/sea-slug.png');
+  border: 2px solid blue;
+  cursor: pointer; }
+.egret-icon {
+  background-image: url('/images/egret.png');
+  border: 2px solid white;
+  cursor: move; }
+//--------------------------------------------
+
+@mixin sexy-border($color, $width) {
+  border: {
+	color: $color;
+	width: $width;
+	style: dashed;
+  }
+}
+
+p { @include sexy-border(blue, 1px); }
+
+//COMPILES TO///////////
+
+p {
+  border-color: blue;
+  border-width: 1px;
+  border-style: dashed; }
+
+//--------------------------------------------
+
+.error {
+  border: 1px #f00;
+  background-color: #fdd;
+}
+.seriousError {
+  @extend .error;
+  border-width: 3px;
+}
+
+//COMPILES TO///////////
+
+.error, .seriousError {
+  border: 1px #f00;
+  background-color: #fdd;
+}
+
+.seriousError {
+  border-width: 3px;
+}
+
+//--------------------------------------------
+
+@each $animal in puma, sea-slug, egret, salamander {
+  .#{$animal}-icon {
+	background-image: url('/images/#{$animal}.png');
+  }
+}
+
+//COMPILES TO///////////
+.puma-icon {
+  background-image: url('/images/puma.png'); }
+.sea-slug-icon {
+  background-image: url('/images/sea-slug.png'); }
+.egret-icon {
+  background-image: url('/images/egret.png'); }
+.salamander-icon {
+  background-image: url('/images/salamander.png'); }

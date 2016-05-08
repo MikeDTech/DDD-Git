@@ -33,6 +33,7 @@ $color-subtext-cta: rgba(255,255,255, .87); //rgba(245, 136, 10, .7);
 
 $color-bk-cta: rgb(22, 122, 198);
 
+
 #cta {
   padding: 1rem;
 }
@@ -58,24 +59,71 @@ $color-bk-cta: rgb(22, 122, 198);
 	}
   }
 
-.bg-white {
-  background-color: #fff;
-}
-.p1 {
-  padding: 1rem;
-}
-.mb1 {
-  margin-bottom: 1rem;
-}
-.raise-1, .raise-hover-1:hover {
-  -webkit-box-shadow: 0 2px 10px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.16);
-  -moz-box-shadow: 0 2px 10px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.16);
-  box-shadow: 0 2px 10px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.16);
-  z-index: 100;
-}
 
-.rounded {
-  -moz-border-radius: 0.3rem;
-  /* -webkit-border-radius: 0.3rem; */
-  /* border-radius: 0.3rem; */
-}
+//.p1 {
+//  padding: 1rem;
+//}
+//.mb1 {
+//  margin-bottom: 1rem;
+//}
+//.raise-1 {
+//  -webkit-box-shadow: 0 2px 10px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.16);
+//  -moz-box-shadow: 0 2px 10px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.16);
+//  box-shadow: 0 2px 10px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.16);
+//  z-index: 100;
+//}
+//
+//.rounded {
+//  -moz-border-radius: 0.3rem;
+//  -webkit-border-radius: 0.3rem;
+//  border-radius: 0.3rem;
+//}
+//
+//.form-clear-blue-bk {
+//  background: rgba(11, 146, 249, 0.18);
+//}
+//
+//
+//.stage-cta-form {
+//  background: rgba(11, 146, 249, 0.18);
+//  box-shadow: 0 2px 10px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.16);
+//  z-index: 100;
+//  border-radius: 0.3rem;
+//
+//  margin-bottom: 1rem;
+//  padding: 1rem;
+//}
+//
+//.bg-blue {
+//  background: #2D3B88;
+//}
+//
+//.bg-clear-blue {
+//  background: rgba(11, 146, 249, 0.18);
+//}
+//
+////////////////////////////////////////
+//
+//.stage-mdl-button {
+//  border-radius: 3px;
+//  color: black;
+//  position: relative;
+//  height: 50px;
+//  margin: 15px;
+//  min-width: 64px;
+//  padding: 0 40px;
+//  display: inline-block;
+//  font-size: 20px;
+//  font-weight: 500;
+//  text-transform: uppercase;
+//  overflow: hidden;
+//  will-change: box-shadow;
+//  transition: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1), background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+//  outline: none;
+//  cursor: pointer;
+//  text-decoration: none;
+//  text-align: center;
+//  vertical-align: middle;
+//  //border: darkblue;
+//  border: #dc7a09;
+//}
