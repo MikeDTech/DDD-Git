@@ -18,6 +18,7 @@
 	<!-- 3 - Load custom app sass files. | Currently don't have files loading from here, loading them directly as sections below for now -->
 
 	<!-- My Custom CSS -->
+	<link rel="stylesheet" href="styles/reset.css">
 	<link rel="stylesheet" href="styles/app.css">
 	<link rel="stylesheet" href="styles/base.css"> <!-- Sets our Custom Base Styles -->
 	<link rel="stylesheet" href="styles/from-base.css">
@@ -27,6 +28,7 @@
 	<link rel="stylesheet" href="styles/misc.css">
 	<link rel="stylesheet" href="styles/shadows.css">
 	<link rel="stylesheet" href="styles/cta-contact.css">
+	<link rel="stylesheet" href="styles/menu.css">
 
 	<!-- Header JS Files <link rel="stylesheet" href="styles/buttons.css">-->
 	<script src="js/vendor/modernizr-custom.js"></script>
@@ -47,11 +49,7 @@
 	<button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#my-collapsing-nav">&#9776</button>
 
 	<div class="collapse navbar-toggleable-xs" id="my-collapsing-nav">
-			<ul class="navigation nav navbar-nav pull-xs-right">
-				<!--<li><a href="#">Home</a></li>-->
-				<!--<li><a href="#">About</a></li>-->
-				<!--<li><a href="#">Products</a></li>-->
-				<!--<li><a href="#">Contact</a></li>-->
+		<ul class="navigation nav navbar-nav pull-xs-right">
 
 			<li class="nav-item active">
 				<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
@@ -76,42 +74,42 @@
 
 <!-- Stage Section -->
 <section id="stage" class="mdl-shadow--6dp">
-<div class="stage-caption">
-		<h1>We develop dream websites.</h1>
+	<div class="stage-caption">
+		<h1>We develop dream websites</h1>
 		<h3>We're professional web designers that develop websites and apps for startups and small businesses</h3>
-			<form action="#" id="cta-form">
+		<form action="#" id="cta-form">
 
-				<!-- Name -->
-				<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-					<input class="mdl-textfield__input" type="text" pattern="^[^±!@£$%^&*_()+§¡€#¢§¶•ªº«\\/<>?:;|=.,[0-9]{1,38}$" id="name-cta">
-					<label class="mdl-textfield__label" for="name-cta">Full Name</label>
-					<span class="mdl-textfield__error">Letters, spaces and hyphens only</span>
-				</div>
+			<!-- Name -->
+			<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+				<input class="mdl-textfield__input" type="text" pattern="^[^±!@£$%^&*_()+§¡€#¢§¶•ªº«\\/<>?:;|=.,[0-9]{1,38}$" id="name-cta">
+				<label class="mdl-textfield__label" for="name-cta">Full Name</label>
+				<span class="mdl-textfield__error">Letters, spaces and hyphens only</span>
+			</div>
 
-				<!-- Email -->
-				<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-					<input class="mdl-textfield__input" type="text" pattern="^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$" id="email-cta">
-					<label class="mdl-textfield__label" for="email-cta">Email</label>
-					<span class="mdl-textfield__error">Please enter a valid email address.</span>
-				</div>
+			<!-- Email -->
+			<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+				<input class="mdl-textfield__input" type="text" pattern="^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$" id="email-cta">
+				<label class="mdl-textfield__label" for="email-cta">Email</label>
+				<span class="mdl-textfield__error">Please enter a valid email address.</span>
+			</div>
 
-				<!-- Phone -->
-				<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-					<input class="mdl-textfield__input" type="text" pattern="^([+]?\d{1,2}[-\s]?|)\d{3}[-\s]?\d{3}[-\s]?\d{4}$" id="phone-cta">
-					<label class="mdl-textfield__label" for="phone-cta">Phone</label>
-					<span class="mdl-textfield__error">Numbers and dashes allowed only.</span>
-				</div>
+			<!-- Phone -->
+			<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+				<input class="mdl-textfield__input" type="text" pattern="^([+]?\d{1,2}[-\s]?|)\d{3}[-\s]?\d{3}[-\s]?\d{4}$" id="phone-cta">
+				<label class="mdl-textfield__label" for="phone-cta">Phone</label>
+				<span class="mdl-textfield__error">Numbers and dashes allowed only.</span>
+			</div>
 
-					<!-- Submit Button -->
-					<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-rounded-border btn btn-lg btn-block">
-						<input class="stage-mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised mdl-button--orange" type="Submit" value="Talk with a web developer now">
-					</div>
-			</form>
-</div>
+			<!-- Submit Button -->
+			<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-rounded-border btn btn-lg btn-block">
+				<input class="stage-mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised mdl-button--orange" type="Submit" value="Talk with a web developer now">
+			</div>
+		</form>
+	</div>
 </section>
 
 <!--<div class="bg-white rounded mb1 p1 raise-1">-->
-	<!--<button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button&#45;&#45;raised mdl-button&#45;&#45;colored">Learn more about our services</button>-->
+<!--<button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button&#45;&#45;raised mdl-button&#45;&#45;colored">Learn more about our services</button>-->
 
 <!--<a href="#" class="btn raise-2 right caps">cta!</a>-->
 <!--</div>-->
@@ -198,12 +196,63 @@
 </section>
 
 
+<!-- Icon Menu -->
+<section id="icon-menu" class="mdl-shadow--6dp">
+	<ul class="ca-menu">
+		<li>
+			<a href="#">
+				<span class="ca-icon">F</span>
+				<div class="ca-content">
+					<h2 class="ca-main">Exceptional Service</h2>
+					<h3 class="ca-sub">Personalized to your needs</h3>
+				</div>
+			</a>
+		</li>
+		<li>
+			<a href="#">
+				<span class="ca-icon">H</span>
+				<div class="ca-content">
+					<h2 class="ca-main">Creative Storytelling</h2>
+					<h3 class="ca-sub">Advanced use of technology</h3>
+				</div>
+			</a>
+		</li>
+		<li>
+			<a href="#">
+				<span class="ca-icon" id="heart">N</span>
+				<div class="ca-content">
+					<h2 class="ca-main">Infographical Education</h2>
+					<h3 class="ca-sub">Understanding visually</h3>
+				</div>
+			</a>
+		</li>
+		<li>
+			<a href="#">
+				<span class="ca-icon">K</span>
+				<div class="ca-content">
+					<h2 class="ca-main">Sophisticated Team</h2>
+					<h3 class="ca-sub">Professionals in action</h3>
+				</div>
+			</a>
+		</li>
+		<li>
+			<a href="#">
+				<span class="ca-icon">L</span>
+				<div class="ca-content">
+					<h2 class="ca-main">Unconditional Support</h2>
+					<h3 class="ca-sub">24/7 for you needs</h3>
+				</div>
+			</a>
+		</li>
+	</ul>
+</section>
+
 <!-- #1 Responsive Web Design Section -->
 
 <section id="section-one" class="mdl-shadow--6dp">
 	<div class="container">
 		<div class="row">
-			<div class="section-spacing section-center">
+					<div class="section-spacing section-center">
 				<div class="col-md-6">
 					<img src="img/responsive-design.png" alt="">
 				</div>
@@ -253,8 +302,7 @@
 					<h6>Modern Website Development</h6>
 					<h2>Developer Tested. Google Approved.</h2>
 					<p class="lead">We utilize web design best practices as recommended by Google. Improve your search ranking and your companies exposure to targeted traffic interested in what your company has to offer.</p>
-					<a href="" role="button" class="btn btn-primary-outline btn-lg">Help me find New Customers</a>
-
+					<a href="" role="button" class="btn btn-primary-outline btn-lg">Find new customers online</a>
 				</div>
 			</div>
 		</div>
@@ -263,6 +311,7 @@
 
 
 <!-- #4 Portfolio / Our Projects Section -->
+
 <section id="dg-container" class="dg-container section-alt section-spacing mdl-shadow--6dp">
 	<div class="container">
 		<div class="row">
@@ -368,10 +417,10 @@
 			<div class="call-to-action">
 				<h2>Stand out from the competition and find new customers online.</h2>
 				<h3>An expert web developer is waiting to help.</h3>
-			    <a href="#">
-				<button class="mdl-button-cta mdl-button  mdl-js-button mdl-js-ripple-effect mdl-button--raised--light mdl-button--orange mdl-shadow--16dp mdl-typography--button-color">Get Started Now
-				</button>
-			    </a>
+				<a href="#">
+					<button class="mdl-button-cta mdl-button  mdl-js-button mdl-js-ripple-effect mdl-button--raised--light mdl-button--orange mdl-shadow--16dp mdl-typography--button-color">Get Started Now
+					</button>
+				</a>
 			</div>
 		</div>
 	</div>
@@ -381,14 +430,14 @@
 <footer id="footer">
 	<div class="container">
 		<div class="row">
-				<h5><em>Designed by</em> <a href="mailto:Admin@DreamDevelopDeploy.com">DreamDevelopDeploy.com</a>
-					<!--<a href="mailto:Admin@DreamDevelopDeploy.com">Admin@DreamDevelopDeploy.com</a> |-->
-					<!--<a href="tel:1-484-880-6011">(484)880-6011</a>-->
-				</h5>
+			<h5><em>Designed by</em> <a href="mailto:Admin@DreamDevelopDeploy.com">DreamDevelopDeploy.com</a>
+				<!--<a href="mailto:Admin@DreamDevelopDeploy.com">Admin@DreamDevelopDeploy.com</a> |-->
+				<!--<a href="tel:1-484-880-6011">(484)880-6011</a>-->
+			</h5>
 			<hr>
-				<h6>Copyright &copy; 2016 - All Rights Reserved</h6>
-			</div>
+			<h6>Copyright &copy; 2016 - All Rights Reserved</h6>
 		</div>
+	</div>
 </footer>
 
 <!-- End ---------------------------------------------------------------------------->
