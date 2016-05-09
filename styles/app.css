@@ -20,7 +20,6 @@ figcaption,
 figure,
 footer,
 header,
-hgroup,
 main,
 menu,
 nav,
@@ -183,6 +182,12 @@ td,
 th {
   padding: 0; }
 
+ol,
+ul,
+dl {
+  margin-top: 0;
+  margin-bottom: 0; }
+
 @media print {
   *,
   *::before,
@@ -298,7 +303,7 @@ ol,
 ul,
 dl {
   margin-top: 0;
-  margin-bottom: 1rem; }
+  margin-bottom: 0; }
 
 ol ol,
 ul ul,

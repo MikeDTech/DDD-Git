@@ -24,7 +24,7 @@
   text-decoration: none;
   text-align: center;
   vertical-align: middle;
-  border: #f5880a; }
+  border: #F5880A; }
 
 .mdl-textfield {
   position: relative;
@@ -42,7 +42,7 @@
 
 .mdl-textfield__input {
   /*Text typing in when filling out form*/
-  border: 2px solid #f5880a;
+  border: 2px solid #F5880A;
   border-radius: 4px;
   display: block;
   font-size: 1.25rem;
@@ -116,7 +116,7 @@ fieldset[disabled] .mdl-textfield .mdl-textfield__label,
   /*Normal Text */ }
 
 .mdl-textfield__label:after {
-  background-color: #f5880a;
+  background-color: #F5880A;
   bottom: 1.5rem;
   /* Has to Match 48 paddding be 1/2 of it */
   content: '';
