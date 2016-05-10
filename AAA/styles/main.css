@@ -1,22 +1,47 @@
+/*Condensed & Cleaned Code
+
+Part #1 - Formatted Cleanly But Condensing Files Etc
+
+- Adding Sass Mixin's for Future Use
+- Removing Unneeded Code
+- Use Docs as reference Sass-Lang.org
+
+-------------------------------------------------------------------
+Just Correcting and Organizing Code Next is
+- Templating SCSS and HTML
+- Best way to use partials?
+- Adding Mixin's to condense etc (see test.scss file)
+- Adding AutoPrefixer / Prefixes
+- Adding Suffixes (--compact) from Sass-Lang.org to Compact Code (so it's all on one line)
+- Taking all spaces out for final version
+
 /* ==========================================================================
- Base Styles
+ Base Variables
 ========================================================================== */
-/* --------------------------------------------------------------------------
-Body / Default Styles
--------------------------------------------------------------------------- */
 @import url("http://fonts.googleapis.com/css?family=Roboto:300,400,400italic,500,500italic,700,700italic|Material+Icons");
-/* ---------------------------------------------------------------------------
- HTML / BODY ELEMENTS
--------------------------------------------------------------------------- */
-html,
+/* ==========================================================================
+ HTML / Body
+========================================================================== */
+html {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 16px;
+  line-height: 24px;
+  width: 100%;
+  height: 100%;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation; }
+
 body {
-  margin: 0;
-  padding: 0;
   width: 100%;
   min-height: 100%;
+  margin: 0; }
+
+html, body {
+  margin: 0;
+  padding: 0;
   position: relative;
   background: transparent;
-  font: normal 16px/24px Roboto, sans-serif;
+  font: 400 16px/24px Roboto, sans-serif;
   color: rgba(0, 0, 0, 0.87);
   -webkit-tap-highlight-color: transparent;
   -webkit-touch-callout: none;
@@ -26,8 +51,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizelegibility; }
 
-h1, h2, h3, h4, h5, h6 {
-  color: rgba(0, 0, 0, 0.87); }
+h1, h2, h3, h4, h5, h6, p {
+  color: rgba(0, 0, 0, 0.87);
+  margin: 0;
+  padding: 0; }
 
 a:link, a:visited, a:hover, a:focus {
   text-decoration: none; }
@@ -43,17 +70,9 @@ img {
   max-width: 100%;
   border: 0; }
 
-.blockquote {
-  font-size: 1.6rem;
-  color: rgba(0, 0, 0, 0.7);
-  border: none;
-  padding: 0; }
-  .blockquote-footer {
-    margin: 1rem 0 0; }
-
-/*-------------------------------------------------------------------
+/* ==========================================================================
  Stage
-------------------------------------------------------------------- */
+========================================================================== */
 #stage {
   background: linear-gradient(to bottom, #22557b 0%, rgba(31, 126, 154, 0.54) 100%), url("../img/stage-image.jpg");
   background-size: cover;
@@ -211,4 +230,4 @@ img {
 </ul>
 */
 
-/*# sourceMappingURL=base.css.map */
+/*# sourceMappingURL=main.css.map */
