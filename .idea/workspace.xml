@@ -1,37 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0b641cdf-7ef3-4bfa-9676-5ff9910cb4ab" name="Default" comment="5-28-16 Some Code Cleanup - Experiments etc..">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/mobile-app-development.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/index-full.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nav.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/cta-contact.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/cta-contact.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/cta-contact.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/main.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/main.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/main.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/nav-test.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/nav-works.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/navigation.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/navigation.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/navigation.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/deployment.xml" afterPath="$PROJECT_DIR$/.idea/deployment.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" />
+    <list default="true" id="0b641cdf-7ef3-4bfa-9676-5ff9910cb4ab" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/desktop.ini" afterPath="$PROJECT_DIR$/desktop.ini" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/base.css" afterPath="$PROJECT_DIR$/styles/base.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/base.css.map" afterPath="$PROJECT_DIR$/styles/base.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/base.scss" afterPath="$PROJECT_DIR$/styles/base.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/misc.css" afterPath="$PROJECT_DIR$/styles/misc.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/misc.css.map" afterPath="$PROJECT_DIR$/styles/misc.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/misc.scss" afterPath="$PROJECT_DIR$/styles/misc.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/nav.css.map" afterPath="$PROJECT_DIR$/styles/nav.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/nav.scss" afterPath="$PROJECT_DIR$/styles/nav.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/shadows.scss" afterPath="$PROJECT_DIR$/styles/shadows.scss" />
     </list>
     <ignored path="DDD.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -61,6 +32,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Michael Davis" />
+      </list>
+    </option>
     <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -447,9 +423,16 @@
       <workItem from="1464233284297" duration="1469000" />
       <workItem from="1464242385547" duration="52000" />
       <workItem from="1464436538405" duration="280000" />
-      <workItem from="1464437147112" duration="75000" />
+      <workItem from="1464437147112" duration="308000" />
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="5-28-16 Some Code Cleanup - Experiments etc..">
+      <created>1464437297198</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1464437297198</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers>
       <Generic shared="false" url="">
         <commitMessageFormat>{id} {summary}</commitMessageFormat>
@@ -536,7 +519,7 @@
     </servers>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="247587000" />
+    <option name="totallyTimeSpent" value="247820000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -556,7 +539,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32840723" sideWeight="0.4969743" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32840723" sideWeight="0.5060514" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32676518" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32730263" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16717096" sideWeight="0.23316912" order="2" side_tool="true" content_ui="tabs" />
@@ -585,7 +568,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Comming After Creating Gallery" />
-    <option name="LAST_COMMIT_MESSAGE" value="Comming After Creating Gallery" />
+    <MESSAGE value="5-28-16 Some Code Cleanup - Experiments etc.." />
+    <option name="LAST_COMMIT_MESSAGE" value="5-28-16 Some Code Cleanup - Experiments etc.." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
