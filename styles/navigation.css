@@ -1,0 +1,165 @@
+/* ==========================================================================
+Navgation
+=========================================================================== */
+/* --------------------------------------------------------------------------
+Nav Variables
+-------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------
+Nav Styles
+-------------------------------------------------------------------------- */
+nav {
+  padding: 0;
+  margin: 0;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 2000;
+  background: #2D3B88; }
+  nav .navigation {
+    padding: 0;
+    margin: 0;
+    background: transparent;
+    box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    align-items: center; }
+    nav .navigation * {
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      -webkit-transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out; }
+    nav .navigation .link, nav .navigation .logo a, nav .navigation li a {
+      text-decoration: none;
+      border: none;
+      color: white;
+      font-size: 0.9rem; }
+    nav .navigation .hover, nav .navigation .logo a:hover, nav .navigation li a:hover {
+      color: black;
+      background: skyblue; }
+    nav .navigation .logo {
+      flex: auto;
+      padding-left: 2rem;
+      display: block;
+      background: green;
+      align-self: stretch; }
+      nav .navigation .logo h1 {
+        font-size: 1.3rem; }
+        nav .navigation .logo h1 span {
+          color: #ccc; }
+        nav .navigation .logo h1 em {
+          color: #ccc;
+          font-size: .8rem; }
+      nav .navigation .logo a {
+        padding: 1rem; }
+    nav .navigation li {
+      list-style: none;
+      padding: 1rem;
+      display: block;
+      text-transform: uppercase; }
+      nav .navigation li a {
+        padding: 1rem;
+        border-bottom: 3px dotted white; }
+      nav .navigation li a:hover {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.7); }
+
+p {
+  color: black;
+  font-size: 60px; }
+
+@media all and (max-width: 600px) {
+  .navigation {
+    -webkit-flex-flow: column wrap;
+    flex-flow: column wrap;
+    padding: 0; }
+
+  .navigation a {
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+
+  .navigation li:last-of-type a {
+    border-bottom: none; } }
+.navigation-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1030; }
+
+.navbar-flexbox {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: flex-end; }
+
+.navbar-brand {
+  float: left; }
+  .navbar-brand a:link, .navbar-brand a:visited, .navbar-brand a:hover, .navbar-brand a:active {
+    border-bottom: none;
+    text-decoration: none; }
+
+.navbar-nav .nav-link {
+  margin: 0;
+  padding: 0;
+  display: flex; }
+
+.navbar-nav .nav-item a:link, .navbar-nav .nav-item a:visited {
+  border-bottom: 1px dotted white; }
+.navbar-nav .nav-item a:hover, .navbar-nav .nav-item a:focus {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.7); }
+
+.navigation {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: flex-end; }
+  .navigation a {
+    display: block;
+    color: white;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.5s ease-in-out; }
+  .navigation a:hover {
+    background: #33439b;
+    color: rgba(255, 255, 255, 0.7);
+    transition: all 0.5s ease-in-out; }
+  .navigation:last-of-type a:hover {
+    background: #2d3b88; }
+
+@media all and (max-width: 860px) {
+  .navbar-toggler {
+    padding: .5rem .75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background: none;
+    border: 1px solid transparent;
+    border-radius: 0.25rem; }
+
+  .navigation {
+    -webkit-flex-flow: column wrap;
+    flex-flow: column wrap;
+    padding: 0; }
+    .navigation a {
+      text-align: center;
+      padding: 10px;
+      border-top: 1px solid rgba(255, 255, 255, 0.3);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+    .navigation li:last-of-type a {
+      border-bottom: none;
+      padding: 0 1rem; } }
+/*# sourceMappingURL=navigation.css.map */
+
+/*# sourceMappingURL=navigation.css.map */

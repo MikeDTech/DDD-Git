@@ -1,0 +1,28 @@
+# Created by .ignore support plugin (hsz.mobi)
+### Example user template template
+### Example user template
+
+# IntelliJ project files
+.idea
+*.iml
+out
+gen
+.gitignore
+.idea/vcs.xml
+img/dynamic-apps-icon.png
+img/ecommerce-icon.png
+img/ecommerce-website.png
+img/icon-template.psd
+img/icon.psd
+img/web-development-icon.png
+index.html~Stashed changes
+npm-debug.log
+styles/.css
+styles/.css.map
+styles/flexbox.css
+styles/flexbox.css.map
+styles/flexbox.scss
+styles/nav-test.css
+styles/nav-test.css.map
+styles/nav-works.css
+styles/nav-works.css.map

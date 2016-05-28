@@ -33,6 +33,7 @@ $color-subtext-cta: rgba(255,255,255, .87); //rgba(245, 136, 10, .7);
 
 $color-bk-cta: rgb(22, 122, 198);
 
+
 #cta {
   padding: 1rem;
 }
@@ -41,7 +42,8 @@ $color-bk-cta: rgb(22, 122, 198);
 	font-size: 1.3rem;
 	padding: 2.2rem;
 	text-align: center;
-	//background: #2d3b88;
+	background: url("../img/blue-bg-pattern.jpg");
+
 
 	h2 {
 	  color: $color-text-cta;
@@ -58,24 +60,326 @@ $color-bk-cta: rgb(22, 122, 198);
 	}
   }
 
-.bg-white {
-  background-color: #fff;
-}
-.p1 {
-  padding: 1rem;
-}
-.mb1 {
-  margin-bottom: 1rem;
-}
-.raise-1, .raise-hover-1:hover {
-  -webkit-box-shadow: 0 2px 10px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.16);
-  -moz-box-shadow: 0 2px 10px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.16);
-  box-shadow: 0 2px 10px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.16);
-  z-index: 100;
-}
 
-.rounded {
-  -moz-border-radius: 0.3rem;
-  /* -webkit-border-radius: 0.3rem; */
-  /* border-radius: 0.3rem; */
+//.p1 {
+//  padding: 1rem;
+//}
+//.mb1 {
+//  margin-bottom: 1rem;
+//}
+//.raise-1 {
+//  -webkit-box-shadow: 0 2px 10px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.16);
+//  -moz-box-shadow: 0 2px 10px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.16);
+//  box-shadow: 0 2px 10px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.16);
+//  z-index: 100;
+//}
+//
+//.rounded {
+//  -moz-border-radius: 0.3rem;
+//  -webkit-border-radius: 0.3rem;
+//  border-radius: 0.3rem;
+//}
+//
+//.form-clear-blue-bk {
+//  background: rgba(11, 146, 249, 0.18);
+//}
+//
+//
+//.stage-cta-form {
+//  background: rgba(11, 146, 249, 0.18);
+//  box-shadow: 0 2px 10px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.16);
+//  z-index: 100;
+//  border-radius: 0.3rem;
+//
+//  margin-bottom: 1rem;
+//  padding: 1rem;
+//}
+//
+//.bg-blue {
+//  background: #2D3B88;
+//}
+//
+//.bg-clear-blue {
+//  background: rgba(11, 146, 249, 0.18);
+//}
+//
+////////////////////////////////////////
+//
+//.stage-mdl-button {
+//  border-radius: 3px;
+//  color: black;
+//  position: relative;
+//  height: 50px;
+//  margin: 15px;
+//  min-width: 64px;
+//  padding: 0 40px;
+//  display: inline-block;
+//  font-size: 20px;
+//  font-weight: 500;
+//  text-transform: uppercase;
+//  overflow: hidden;
+//  will-change: box-shadow;
+//  transition: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1), background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+//  outline: none;
+//  cursor: pointer;
+//  text-decoration: none;
+//  text-align: center;
+//  vertical-align: middle;
+//  //border: darkblue;
+//  border: #dc7a09;
+//}
+
+/* http://codepen.io/littlesnippets/pen/XdNJWr
+http://littlesnippets.net/page/5/ */
+//.card-box-menu {
+//  color: #fff;
+//  position: relative;
+//  float: left;
+//  overflow: hidden;
+//  margin: 3.5rem;
+//  min-width: 230px;
+//  max-width: 380px;
+//  width: 100%;
+//  text-align: left;
+//  line-height: 1.4em;
+//  background-color: #141414;
+//  //border-radius: 2px;
+//
+//  * {
+//	-webkit-box-sizing: border-box;
+//	box-sizing: border-box;
+//	-webkit-transition: all 0.25s ease;
+//	transition: all 0.25s ease;
+//  }
+//  img {
+//	max-width: 100%;
+//	vertical-align: top;
+//	opacity: 0.85;
+//	//border-radius: 2px;
+//  }
+//
+//  figcaption {
+//	width: 100%;
+//	background-color: #141414;
+//	padding: 25px;
+//	position: relative;
+//	//border-radius: 2px;
+//
+//	&:before {
+//	  position: absolute;
+//	  content: '';
+//	  bottom: 100%;
+//	  left: 0;
+//	  width: 0;
+//	  height: 0;
+//	  border-style: solid;
+//	  border-width: 55px 0 0 365px;
+//	  border-color: transparent transparent transparent #141414;
+//	}
+//	& a {
+//	  padding: 5px;
+//	  border: 1px solid #ffffff;
+//	  color: #ffffff;
+//	  font-size: 0.8em;
+//	  text-transform: uppercase;
+//	  margin: 10px 0;
+//	  display: inline-block;
+//	  opacity: 0.65;
+//	  width: 47%;
+//	  text-align: center;
+//	  font-weight: 600;
+//	  letter-spacing: 1px;
+//	  text-decoration: none;
+//
+//	  &:hover {
+//		opacity: 1;
+//	  }
+//	}
+//  }
+//
+//    .profile {
+//      border-radius: 50%;
+//      position: absolute;
+//      bottom: 100%;
+//      left: 25px;
+//      z-index: 1;
+//      max-width: 90px;
+//      opacity: 1;
+//      box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+//    }
+//    .follow {
+//      margin-right: 6%;
+//      border-color: #2980b9;
+//      color: #2980b9;
+//    }
+//    h2 {
+//	  color: #2980b9;
+//	  margin: 5px 5px 10px 0;
+//	  font-weight: 400;
+//	  opacity: 1;
+//
+//	  & span {
+//		display: block;
+//		font-size: 0.9rem;
+//		color: #ccc;
+//		font-weight: 400;
+//		text-align: right;
+//		border-bottom: thin solid #ccc;
+//	  }
+//	}
+//
+//  p {
+//    margin: 10px 0 10px;
+//    font-size: 1rem;
+//    letter-spacing: 0;
+//    }
+//
+//  &:before,
+//  &:hover:before {
+//    bottom: 0;
+//    box-shadow: 0 0 0 white;
+//    -webkit-transition-delay: 0s;
+//    transition-delay: 0s;
+//  }
+//}
+//
+///* Demo purposes only */
+////body {
+// // background-color: #212121;
+////}
+
+#card-box {
+
+  .card-box {
+	margin: 0;
+	padding: 0;  /*Do You need 100% height and width?*/
+
+	display: flex;
+
+	justify-content: space-around; /* x-axis spaces around items*/
+	align-content: center; /* y-axis center */
+	align-items: center;
+
+	color: #fff;
+	height: auto;
+
+	.card-box-item {
+	  flex: auto;
+	  position: relative;
+	  overflow: hidden;
+	  min-width: 400px;
+	  max-width: 430px;
+	  color: #fff;
+	  text-align: left;
+	  line-height: 1.4em;
+	  background-color: #141414;
+
+	  * {
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box; // width and height include border and padding the margin isn't included
+		-webkit-transition: all 0.5s ease-in-out;
+		transition: all 0.5s ease-in-out;
+	  }
+
+	  & > img {  //applies to the image right after parent element only
+		width: 100%;
+		opacity: 0.85;
+		height: 220px;
+	  }
+
+	  figcaption { // Bottom Section
+		padding: 25px;
+		position: relative;
+
+
+		&:before {
+		  position: absolute;
+		  content: '';
+		  bottom: 100%;
+		  left: 0;
+		  width: 0;
+		  height: 0;
+		  border-style: solid;
+		  border-width: 60px 0 0 500px; // Defines Height and Width of Diagonal Line
+		  border-color: transparent transparent transparent #141414; //Defines Bottom Color
+		}
+
+
+		a {
+		  padding: 5px;
+		  border: 1px solid #fff;
+		  color: #fff;
+		  font-size: .9rem;
+		  text-transform: uppercase;
+		  margin: 0;
+		  display: inline-block;
+		  opacity: 1;
+		  width: 45%;
+		  text-align: center;
+		  font-weight: 500;
+		  letter-spacing: 1px;
+		  text-decoration: none;
+		}
+
+		a:hover {
+		  opacity: .78;
+		}
+	  }
+
+	  .profile {
+		border-radius: 50%;
+		position: absolute;
+		bottom: 100%;
+		left: 25px;
+		z-index: 1;
+		max-width: 90px;
+		opacity: 1;
+		//box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+		box-shadow: 0 6px 3px 2px rgba(0, 0, 0, 0.5), 0 3px 6px 3px rgba(0, 0, 0, 0.25), 0 1px 1px 1px rgba(0, 0, 0, 0.15);
+	  }
+
+
+	  .button-raised-shadow {
+		box-shadow: 0 6px 3px 2px rgba(0, 0, 0, 0.5), 0 3px 6px 3px rgba(0, 0, 0, 0.25), 0 1px 1px 1px rgba(0, 0, 0, 0.15);
+	  }
+
+	  .follow {
+		margin-right: 7%;
+		border-color: #0B92F9;
+		color: #0B92F9;
+	  }
+
+	  h2 {
+		color: #0B92F9;
+		font-weight: 400;
+		font-size: 1.8rem;
+
+		span {
+		  display: block;
+		  font-size: 0.9rem;
+		  color: #ccc;
+		  padding-top: 5px;
+		  font-weight: 400;
+		  text-align: right;
+		  border-bottom: thin solid #ccc;
+		}
+	  }
+	  p {
+		font-size: 1rem;
+		letter-spacing: 1px;
+		padding: 5px 0;
+		height: 150px;
+		align-self: center;
+		//opacity: 0.8;
+	  }
+
+	  &:hover:before,
+	  &.hover:before {
+		bottom: 0;
+		box-shadow: 0 0 0 white;
+		-webkit-transition-delay: 0ms;
+		transition-delay: 0ms;
+	  }
+	}
+  }
 }

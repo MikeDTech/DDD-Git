@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Required meta tags always come first -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>DreamDevelopDeploy.com | Home</title>
+	<link rel="shortcut icon" href="img/favicon.png">
+	<!--Font / Icons Must Be Placed Before Stylesheets -->
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<!--Stylesheets -->
+	<link rel="stylesheet" href="styles/material.css">
+
+	<!-- Calls Selected Parts of Bootstrap We Want -->
+	<!-- 1 - Loads bootstrap default variables, then my custom variables styles/_variables.scss
+	<!-- 2 - Load bootstrap sass files | With the rest commented out files from bower_components/scss -->
+	<!-- 3 - Load custom app sass files. | Currently don't have files loading from here, loading them directly as sections below for now -->
+
+	<!-- My Custom CSS -->
+	<!--<link rel="stylesheet" href="styles/reset.css">-->
+	<!--<link rel="stylesheet" href="styles/app.css">-->
+	<link rel="stylesheet" href="styles/base.css"> <!-- Sets our Custom Base Styles -->
+	<link rel="stylesheet" href="styles/from-base.css">
+	<!--<link rel="stylesheet" href="styles/navigation.css">-->
+	<link rel="stylesheet" href="styles/contact.css">
+	<link rel="stylesheet" href="styles/portfolio.css">
+	<link rel="stylesheet" href="styles/misc.css">
+	<link rel="stylesheet" href="styles/shadows.css">
+	<link rel="stylesheet" href="styles/cta-contact.css">
+	<link rel="stylesheet" href="styles/menu.css">
+
+	<link rel="stylesheet" href="styles/nav-works.css">
+
+	<!-- Header JS Files <link rel="stylesheet" href="styles/buttons.css">-->
+	<script src="js/vendor/modernizr-custom.js"></script>
+</head>
+<body>
+<!-- Start ------------------------------------------------------------------------>
+
+<!--Main Nav -->
+<nav>
+	<div class="navigation">
+
+		<div class="logo">
+			<a href="http://dreamdevelopdeploy.com">
+			<h1>
+				<img src="img/logo-final.png" alt="Return to DreamDevelopDeploy.com Home">
+				Dream<span>Develop</span>Deploy<em>.com</em>
+			</h1>
+		</a>
+	</div>
+
+	<button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#my-collapsing-nav">&#9776</button>
+
+	<!--<div class="collapse navbar-toggleable-xs" id="my-collapsing-nav">-->
+		<!--<ul class="navigation nav navbar-nav pull-xs-right">-->
+
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Features</a></li>
+			<li><a href="#">Process</a></li>
+			<li><a href="#">Projects</a></li>
+			<li><a href="#">Contact</a></li>
+			<a href="#"><button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised mdl-button--lightblue">Free Consultation</button></a>
+	</div>
+</nav>
+
+
+
+
+
+
+
+<!-- End ---------------------------------------------------------------------------->
+
+<!-- Javascript Files -->
+<script src="js/vendor/material.js"></script>
+<!-- jQuery 1st | 2nd Bootstrap JS -->
+<script src="bower_components/jquery/dist/js/jquery.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="js/vendor/jquery.gallery.js"></script>
+
+
+<!-- Angular Scripts -->
+<script src="js/vendor/angular/angular.min.js"></script>
+<script src="js/vendor/angular/angular-animate.min.js"></script>
+<script src="js/vendor/angular/angular-aria.min.js"></script>
+<script src="js/vendor/angular/angular-material.min.js"></script>
+
+<script src="js/directives/app.js"></script>
+
+<!-- Inline Scripts (Portfolio Script) -->
+<script>
+	$(function() {
+		$('#dg-container').gallery();
+	});
+</script>
+
+<!-- Google Analytics Tracking -->
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-77000207-1', 'auto');
+	ga('send', 'pageview');
+</script>
+</body>
+</html>

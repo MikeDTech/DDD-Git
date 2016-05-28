@@ -1,36 +1,41 @@
+@charset "UTF-8";
+/*Condensed & Cleaned Code
+
+Part #1 - Formatted Cleanly But Condensing Files Etc
+
+- Adding Sass Mixin's for Future Use
+- Removing Unneeded Code
+- Use Docs as reference Sass-Lang.org
+
+-------------------------------------------------------------------
+Just Correcting and Organizing Code Next is
+- Templating SCSS and HTML
+- Best way to use partials?
+- Adding Mixin's to condense etc (see test.scss file)
+- Adding AutoPrefixer / Prefixes
+- Adding Suffixes (--compact) from Sass-Lang.org to Compact Code (so it's all on one line)
+- Taking all spaces out for final version
+
 /* ==========================================================================
- Base Styles
+ Base Variables
 ========================================================================== */
-/* --------------------------------------------------------------------------
-Body / Default Styles
--------------------------------------------------------------------------- */
-$black: rgb(0,0,0);
-$white: rgb(255,255,255);
-
-// Header & Footer
-$header-text: rgba(255, 255, 255, 0.7);
-$header-bk: #2D3B88;
-$header-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.18);
-
-$footer-text: rgba(255, 255, 255, 0.7);
-$footer-link: rgba(255, 255, 255, .87);
-$footer-bk: #2D3B88;
-$footer-shadow: inset 0 0 20px 5px rgba(0, 0, 0, 0.18);
 
 // Text, Links, Background
-$family: unquote("Roboto");
-@import url("http://fonts.googleapis.com/css?family=#{$family}:300,400,400italic,500,500italic,700,700italic|Material+Icons");
-$bg: transparent;
-$text: rgba(0,0,0,.87);
-$link: rgba(255,255,255,.54);
-$hover: rgba(255,255,255,1);
-
-$font-style:'';
-$font-variant: '';
-$font-weight: normal;
+$font: Roboto;
+$font-weight: 400;
 $font-size: 16px;
 $font-line-height: 24px;
-$font-family: $family,sans-serif;
+$font-style:'';
+$font-variant: '';
+
+@import url("http://fonts.googleapis.com/css?family=#{$font}:300,400,400italic,500,500italic,700,700italic|Material+Icons");
+$font-family: $font, sans-serif;
+
+
+$bg: transparent;
+$text: rgba(0,0,0, 0.87);
+$link: rgba(255,255,255, 0.54);
+$hover: rgba(255,255,255, 1);
 
 
 // Section Styles
@@ -51,22 +56,45 @@ $trans: all 0.5s ease;
 
 // Sections
 
+// Header & Footer
+$header-text: rgba(255, 255, 255, 0.7);
+$header-bk: #2D3B88;
+$header-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.18);
 
-/* ---------------------------------------------------------------------------
- HTML / BODY ELEMENTS
--------------------------------------------------------------------------- */
+$footer-text: rgba(255, 255, 255, 0.7);
+$footer-link: rgba(255, 255, 255, .87);
+$footer-bk: #2D3B88;
+$footer-shadow: inset 0 0 20px 5px rgba(0, 0, 0, 0.18);
 
-html,
+
+/* ==========================================================================
+ HTML / Body
+========================================================================== */
+//Exactly same order as google.
+html {
+  color: $text;
+  font-size: $font-size;
+  line-height: $font-size * 1.5;
+
+  width: 100%;
+  height: 100%;
+
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+}
+
 body {
-  margin:0;
-  padding:0;
   width: 100%;
   min-height: 100%;
+  margin: 0; }
+
+html, body {
   position: relative;
   background: $bg;
 
   font: #{$font-weight} #{$font-size}/#{$font-line-height} #{$font-family};
   color: $text;
+
   -webkit-tap-highlight-color: transparent;
   -webkit-touch-callout: none;
   -webkit-text-size-adjust: 100%;
@@ -76,8 +104,10 @@ body {
   text-rendering: optimizelegibility;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,h2,h3,h4,h5,h6,p {
   color: $section-text-primary;
+  margin: 0;
+  padding: 0;
 }
 
 a:link, a:visited, a:hover, a:focus {
@@ -97,81 +127,53 @@ img {
   border: 0;
 }
 
-.blockquote {
-  font-size: 1.6rem;
-  color: $section-text-dark;
-  border: none;
-  padding: 0;
 
-  &-footer {
-	margin: 1rem 0 0;
-  }
-}
-
-/*-------------------------------------------------------------------
+/* ==========================================================================
  Stage
-------------------------------------------------------------------- */
-$s-stage-gradient1: #22557B;
-$s-stage-gradient1-opacity: 1;
+========================================================================== */
+$stage-gradient: rgba(#22557B, 1);
+$stage-gradient2: rgba(#1f7e9a, .54);
 
-$s-stage-gradient2: #1f7e9a;
-$s-stage-gradient2-opacity: 0.54;
-
-$s-stage-text: rgb(255,255,255);
+$stage-text: rgb(255,255,255);
 
 #stage {
-  background: rgba($s-stage-gradient2, $s-stage-gradient2-opacity);
- background: linear-gradient(to bottom, rgba($s-stage-gradient1, $s-stage-gradient1-opacity) 0%, rgba($s-stage-gradient2, $s-stage-gradient2-opacity) 100%),  url("../img/stage-image.jpg");
-
-  //background: url("../img/blue-bg-pattern.jpg");
-  //background: url("../img/dreamdevelopdeploy-bg.gif");
+  background: linear-gradient(to bottom, $stage-gradient 0%, $stage-gradient2 100%), url("../img/stage-image.jpg");
   background-size: cover;
-  color: $s-stage-text;
+  color: $stage-text;
 
-  display: flex;
-  flex-flow: row wrap;
-  position: relative;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  margin: 0;
-  padding: 0;
+//flex: auto; // see page at w3 below.
+  display: flex; // flex auto make it so they fill any space along x-axis
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around; // x-axis all items are evenly spaced
+  align-content: space-around; // y-axis positioning when there is extra space
 
-  justify-content: center; // x-axis all items are evenly spaced
-  align-content: center; // y-axis positioning when there is extra space
-  align-items: center; // strech fills extra space on y-axis
-  height: 700px;
+  align-items: stretch; // strech fills extra space on y-axis
+
 
   .stage-caption {
 	font-size: 1.3rem;
-	width: 100%;
 	text-align: center;
-	margin: auto;
-
+	//flex-basis: //takes place of height and width, size is determined by flex factors abov
+	//  align-self: strech or auto etc   //allows you to over ride an item for the align-items property
+// https://www.w3.org/TR/css-flexbox/#flex-common
 	h1 {
-	  color: rgba($s-stage-text, .54);
+	  color: rgba($stage-text, .70);
 	  font-weight: bold;
-	  text-transform: uppercase;
 	  font-size: 4rem;
 	  margin-top: 50px;
+	  text-transform: uppercase;
 	}
 
 	h3 {
 	  font-size: 1.75rem;
-	  color: $s-stage-text;
+	  color: $stage-text;
 	  font-weight: 500;
-	  padding-bottom: 2rem;
+	  padding-bottom: .8rem;
 	}
 
-	.cta-form {
-	  background: rgba(#0B92F9, 0.87);
-	  //background: url("../img/blue-bg-pattern.jpg");
+	#cta-form {
+	  background: rgba(11, 146, 249, 0.18);
 	  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.16);
-	  padding-bottom: 1.2rem;
-	  padding-top: .5rem;
-	  //border-top: 2px solid #F5880A;
-	  //border-bottom: 2px solid #F5880A;
 	}
   }
 }
@@ -182,12 +184,12 @@ $s-stage-text: rgb(255,255,255);
 }
 
 .card-section.mdl-card {
-	 width: 95%;
-	 height: inherit;
-	 align-items: center;
-	 display: flex;
+  width: 95%;
+  height: inherit;
+  align-items: center;
+  display: flex;
   margin: 0 auto; // centers x-axis
- }
+}
 
 .card-section {
 

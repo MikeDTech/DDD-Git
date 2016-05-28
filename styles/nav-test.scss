@@ -1,0 +1,171 @@
+/* ==========================================================================
+Navgation
+=========================================================================== */
+
+/* --------------------------------------------------------------------------
+Nav Variables
+-------------------------------------------------------------------------- */
+$nav-bg: #2D3B88;
+$nav-color:  rgba(255,255,255, 1);
+$nav-color-link: rgba(255,255,255, 1);
+$nav-color-hover: rgba(255,255,255, 0.70);
+$nav-box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2);
+//$nav-box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.18);
+
+$nav-font-weight: 500;
+$nav-font-size: 1rem;
+
+$trans: all 0.5s ease-in-out;
+
+/* --------------------------------------------------------------------------
+Nav Styles
+-------------------------------------------------------------------------- */
+
+
+nav {
+  padding: 0;
+  margin: 0;
+
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 2000;
+  background: $nav-bg;
+  box-shadow: $nav-box-shadow;
+
+
+  .navigation {
+	margin: 0;
+	padding: 0;
+
+	background: transparent;
+	box-shadow: $nav-box-shadow;
+	display: flex;
+
+	flex-flow: row wrap;
+	justify-content: flex-end; // x-axis alignment
+	align-items: center; // y-axis alignment
+
+	* {
+	  -webkit-box-sizing: border-box;
+	  box-sizing: border-box; // width and height include border and padding the margin isn't included
+	  -webkit-transition: all 0.5s ease-in-out;
+	  transition: all 0.5s ease-in-out;
+	}
+
+
+	.link {
+	  text-decoration: none;
+	  border: .1rem solid transparent;
+	  border-top: none;
+	  color: $nav-color;
+	  font-size: $nav-font-size;
+	  font-weight: 500;
+	  letter-spacing: -.02rem;
+	  display: block;
+	}
+
+	.hover {
+	  @extend .link;
+	  color: $nav-color-hover;
+	  border: .1rem solid transparent;
+	  border-top: none;
+
+	}
+
+
+
+	.logo {
+	  flex: auto; //adding this to parent allows child links to be aligned at the start
+	  max-height: 40px;
+	  min-height: 40px;
+	 // background: green;
+	  //align-self: stretch;
+	  //background: url("http://DreamDevelopDeploy.com/img/logo-final.png") left center;
+	  //position: absolute;
+	  //left: 4rem;
+	  //top: 0;
+
+	  h1 {
+		margin: 0;
+		padding: 0;
+		color: $nav-color;
+		font-size: 1.25rem;
+		letter-spacing: -0.02em;
+		font-weight: 400;
+
+		span {
+		  color: $nav-color-hover;
+		}
+		em {
+		  color: $nav-color-hover;
+		  font-size: .8rem;
+		}
+
+	  }
+
+
+
+	  a {
+		@extend .link;
+
+	  }
+
+	  a:hover {
+		@extend .hover;
+	  }
+
+	}
+
+
+	li {
+	  list-style: none;
+	  padding: 0 .04rem; // space between items
+	  text-transform: uppercase;
+	  background: transparent;
+
+
+
+	  a {
+		@extend .link;
+		//border-bottom: 1px dotted $nav-color-link;
+		border-bottom: .1rem solid transparent;
+		background: #0B92F9;
+		padding: 1rem .75rem;
+
+
+	  }
+	  a:hover {
+		@extend .hover;
+		border-bottom: .1rem solid orange;
+		color: orange;
+		background: black;
+		padding: 1rem .75rem;
+	  }
+
+	}
+
+  } // end .navigation
+} // end nav
+p { color: black; font-size: 60px;}
+
+@media all and (max-width: 600px) {
+  .navigation {
+	-webkit-flex-flow: column wrap;
+	flex-flow: column wrap;
+	padding: 0;
+  }
+
+  .navigation a {
+	text-align: center;
+	padding: 10px;
+	border-top: 1px solid rgba(255,255,255,0.3);
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+  }
+
+
+  .navigation li:last-of-type a {
+	border-bottom: none;
+  }
+}

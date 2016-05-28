@@ -1,0 +1,396 @@
+/* ==========================================================================
+Navgation
+=========================================================================== */
+
+/* --------------------------------------------------------------------------
+Nav Variables
+-------------------------------------------------------------------------- */
+$nav-bg: #2D3B88;
+$nav-color:  rgba(255,255,255, 1);
+$nav-color-link: rgba(255,255,255, 1);
+$nav-color-hover: rgba(255,255,255, 0.70);
+$nav-box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.18);
+
+$nav-font-size: .9rem;
+
+$trans: all 0.5s ease-in-out;
+
+/* --------------------------------------------------------------------------
+Nav Styles
+-------------------------------------------------------------------------- */
+
+
+nav {
+  padding: 0;
+  margin: 0;
+
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 2000;
+  background: $nav-bg;
+
+
+  .navigation {
+	padding: 0;
+	margin: 0;
+	background: transparent;
+	box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2);
+	display: flex;
+
+	flex-flow: row wrap;
+	justify-content: flex-end; // x-axis alignment
+	align-items: center; // y-axis alignment
+
+	* {
+	  -webkit-box-sizing: border-box;
+	  box-sizing: border-box; // width and height include border and padding the margin isn't included
+	  -webkit-transition: all 0.5s ease-in-out;
+	  transition: all 0.5s ease-in-out;
+	}
+
+
+	.link {
+	  text-decoration: none;
+	  border: none;
+	  color: $nav-color;
+	  font-size: $nav-font-size;
+	}
+
+	.hover {
+	  // background: darken(red, 2%);
+	  color: black;
+	  background: skyblue;
+	  //color: darken($nav-color, 5%);
+	}
+
+
+
+	.logo {
+	  flex: auto; //adding this to parent allows child links to be aligned at the start
+	  padding-left: 2rem;
+	  display: block;
+	  background: green;
+	  align-self: stretch;
+	  h1 {
+		font-size: 1.3rem;
+
+		span {
+		  color: #ccc;
+		}
+		em {
+		  color: #ccc;
+		  font-size: .8rem;
+		}
+
+	  }
+
+
+
+	  a {
+		@extend .link;
+		padding: 1rem;
+
+	  }
+
+	  a:hover {
+		@extend .hover;
+	  }
+
+	}
+
+
+	li {
+	  list-style: none;
+	  padding: 1rem;
+	  display: block;
+	  text-transform: uppercase;
+
+
+	  a {
+		@extend .link;
+		padding: 1rem;
+		border-bottom: 3px dotted $nav-color-link;
+
+
+	  }
+	  a:hover {
+		@extend .hover;
+
+		border-bottom: 1px solid $nav-color-hover;
+	  }
+
+	}
+
+  } // end .navigation
+} // end nav
+p { color: black; font-size: 60px;}
+
+@media all and (max-width: 600px) {
+  .navigation {
+	-webkit-flex-flow: column wrap;
+	flex-flow: column wrap;
+	padding: 0;
+  }
+
+  .navigation a {
+	text-align: center;
+	padding: 10px;
+	border-top: 1px solid rgba(255,255,255,0.3);
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+  }
+
+
+  .navigation li:last-of-type a {
+	border-bottom: none;
+  }
+}
+
+//
+//<nav>
+//<div class="navigation">
+//
+//<div class="logo"><a href="#"><h1>Dream<span>Develop</span>Deploy<em>.com</em></h1>
+//</a>
+//</div>
+//<li><a href="#">Home</a></li>
+//<li><a href="#">About</a></li>
+//<li><a href="#">Products</a></li>
+//<li><a href="#">Contact</a></li>
+//</div>
+//</nav>
+//<p>g
+// g
+// g
+// g
+// g
+// g
+// g<br>
+//   g
+//   g
+//   g
+//   g<br>
+//	 g
+//	 g
+//	 g<br>
+//	   g
+//	   g
+//
+//	   gg
+//	   g
+//	   g
+//	   gg
+//	   g
+//	   g
+//	   g
+//	   g
+//
+//</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//////////////////////////////////////////////////////////////
+//nav {
+//  background: $nav-bg;
+//  box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2);
+//  padding: 0;
+//  margin: 0;
+//  background: $nav-color;
+//}
+//
+//
+//nav {
+//  .navigation {
+//	margin: 0;
+//	padding: 0;
+//
+//	background: deepskyblue;
+//
+//	display: -webkit-box;
+//	display: -moz-box;
+//	display: -ms-flexbox;
+//	display: -webkit-flex;
+//	display: flex;
+//
+//	-webkit-flex-flow: row wrap;
+//	justify-content: flex-end; // x-axis alignment
+//	align-items: center; // y-axis alignment
+//
+//
+//  .nav-logo {
+//	align-self:
+//	background: url("../img/logo.png");
+//
+//
+//  }
+//	color: $nav-color;
+//  }
+//  font-size: $nav-font-size;
+//.navigation-links {
+//  a {
+//	display: flex;
+//	border-bottom: none;
+//	text-decoration: none;
+//	$nav-font-size: .9rem;
+//	display: block;
+//	text-align: center;
+//	padding: 1em;
+//	color: white;
+//
+//  }
+//
+//  a:hover {
+//	@extend a;
+//	$nav-font-size: .9rem;
+//	opacity: .70;
+//  }
+//
+//
+//
+//  h1 {
+//	color: white;
+//	font-size: 1.3rem;
+//
+//  }
+//  span {
+//	color: $nav-color-text;
+//  }
+//}
+
+  .navigation-fixed {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1030;
+  }
+
+  .navbar-flexbox {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+
+	display: flex;
+
+	-webkit-flex-flow: row wrap;
+	justify-content: flex-end;
+  }
+
+  .navbar-brand {
+	float: left;
+
+	a:link, a:visited, a:hover, a:active {
+	  border-bottom: none;
+	  text-decoration: none;
+	}
+
+
+  }
+
+  .navbar-nav .nav-link {
+	margin: 0;
+	padding: 0;
+	display: flex;
+  }
+
+
+
+  .navbar-nav .nav-item {
+	//float: none;
+
+	a:link, a:visited {
+	  border-bottom: 1px dotted $nav-color-link;
+	}
+
+	a:hover, a:focus {
+	  border-bottom: 1px solid $nav-color-hover;
+	}
+  }
+  //////////////////////////////////////////////////////////////
+
+  .navigation {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+
+	align-items: center;
+
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+
+	-webkit-flex-flow: row wrap;
+	justify-content: flex-end;
+
+	a {
+	  display: block;
+
+
+	  color: $nav-color-link;
+	  font-size: $nav-font-size;
+	  text-transform: uppercase;
+	  text-decoration: none;
+
+	  transition: $trans;
+
+	}
+
+	a:hover {
+	  //background: darken($nav-bg, 12%);
+	  background: lighten($nav-bg, 5%);
+	  color: $nav-color-hover;
+	  transition: $trans;
+	}
+	&:last-of-type a:hover {
+	  background: lighten($nav-bg, 0%);
+	}
+
+  }
+  ///////////////////////////////////////////////////
+  @media all and (max-width: 860px) {
+
+	.navbar-toggler {
+	  padding: .5rem .75rem;
+	  font-size: 1.25rem;
+	  line-height: 1;
+	  background: none;
+	  border: 1px solid transparent;
+	  border-radius: 0.25rem;
+	}
+
+	.navigation {
+	  -webkit-flex-flow: column wrap;
+	  flex-flow: column wrap;
+	  padding: 0;
+
+	  a {
+		text-align: center;
+		padding: 10px;
+		border-top: 1px solid rgba(255, 255, 255, 0.3);
+		border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	  }
+
+	  li:last-of-type a {
+		border-bottom: none;
+		padding: 0 1rem;
+	  }
+	}
+  }
+
+
+
+/*# sourceMappingURL=navigation.css.map */

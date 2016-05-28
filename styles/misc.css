@@ -11,7 +11,8 @@
   background: #167ac6;
   font-size: 1.3rem;
   padding: 2.2rem;
-  text-align: center; }
+  text-align: center;
+  background: url("../img/blue-bg-pattern.jpg"); }
   .call-to-action h2 {
     color: white;
     font-weight: 600;
@@ -23,24 +24,105 @@
     font-weight: 500;
     padding: .4rem; }
 
-.bg-white {
-  background-color: #fff; }
-
-.p1 {
-  padding: 1rem; }
-
-.mb1 {
-  margin-bottom: 1rem; }
-
-.raise-1, .raise-hover-1:hover {
-  -webkit-box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.16);
-  -moz-box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.16);
-  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.16);
-  z-index: 100; }
-
-.rounded {
-  -moz-border-radius: 0.3rem;
-  /* -webkit-border-radius: 0.3rem; */
-  /* border-radius: 0.3rem; */ }
+/* http://codepen.io/littlesnippets/pen/XdNJWr
+http://littlesnippets.net/page/5/ */
+#card-box .card-box {
+  margin: 0;
+  padding: 0;
+  /*Do You need 100% height and width?*/
+  display: flex;
+  justify-content: space-around;
+  /* x-axis spaces around items*/
+  align-content: center;
+  /* y-axis center */
+  align-items: center;
+  color: #fff;
+  height: auto; }
+  #card-box .card-box .card-box-item {
+    flex: auto;
+    position: relative;
+    overflow: hidden;
+    min-width: 400px;
+    max-width: 430px;
+    color: #fff;
+    text-align: left;
+    line-height: 1.4em;
+    background-color: #141414; }
+    #card-box .card-box .card-box-item * {
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      -webkit-transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out; }
+    #card-box .card-box .card-box-item > img {
+      width: 100%;
+      opacity: 0.85;
+      height: 220px; }
+    #card-box .card-box .card-box-item figcaption {
+      padding: 25px;
+      position: relative; }
+      #card-box .card-box .card-box-item figcaption:before {
+        position: absolute;
+        content: '';
+        bottom: 100%;
+        left: 0;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 60px 0 0 500px;
+        border-color: transparent transparent transparent #141414; }
+      #card-box .card-box .card-box-item figcaption a {
+        padding: 5px;
+        border: 1px solid #fff;
+        color: #fff;
+        font-size: .9rem;
+        text-transform: uppercase;
+        margin: 0;
+        display: inline-block;
+        opacity: 1;
+        width: 45%;
+        text-align: center;
+        font-weight: 500;
+        letter-spacing: 1px;
+        text-decoration: none; }
+      #card-box .card-box .card-box-item figcaption a:hover {
+        opacity: .78; }
+    #card-box .card-box .card-box-item .profile {
+      border-radius: 50%;
+      position: absolute;
+      bottom: 100%;
+      left: 25px;
+      z-index: 1;
+      max-width: 90px;
+      opacity: 1;
+      box-shadow: 0 6px 3px 2px rgba(0, 0, 0, 0.5), 0 3px 6px 3px rgba(0, 0, 0, 0.25), 0 1px 1px 1px rgba(0, 0, 0, 0.15); }
+    #card-box .card-box .card-box-item .button-raised-shadow {
+      box-shadow: 0 6px 3px 2px rgba(0, 0, 0, 0.5), 0 3px 6px 3px rgba(0, 0, 0, 0.25), 0 1px 1px 1px rgba(0, 0, 0, 0.15); }
+    #card-box .card-box .card-box-item .follow {
+      margin-right: 7%;
+      border-color: #0B92F9;
+      color: #0B92F9; }
+    #card-box .card-box .card-box-item h2 {
+      color: #0B92F9;
+      font-weight: 400;
+      font-size: 1.8rem; }
+      #card-box .card-box .card-box-item h2 span {
+        display: block;
+        font-size: 0.9rem;
+        color: #ccc;
+        padding-top: 5px;
+        font-weight: 400;
+        text-align: right;
+        border-bottom: thin solid #ccc; }
+    #card-box .card-box .card-box-item p {
+      font-size: 1rem;
+      letter-spacing: 1px;
+      padding: 5px 0;
+      height: 150px;
+      align-self: center; }
+    #card-box .card-box .card-box-item:hover:before, #card-box .card-box .card-box-item.hover:before {
+      bottom: 0;
+      box-shadow: 0 0 0 white;
+      -webkit-transition-delay: 0ms;
+      transition-delay: 0ms; }
 
 /*# sourceMappingURL=misc.css.map */
