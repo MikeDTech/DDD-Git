@@ -1,0 +1,188 @@
+/* ==========================================================================
+Navgation
+=========================================================================== */
+
+/* --------------------------------------------------------------------------
+Nav Variables
+-------------------------------------------------------------------------- */
+$nav-bg: #2D3B88;
+$nav-color-text:  rgba(255,255,255, .70);
+$nav-color-link: rgba(255,255,255, 1);
+$nav-color-hover: rgba(255,255,255, 0.70);
+$nav-box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.18);
+
+$nav-font-size: .9rem;
+
+$trans: all 0.5s ease-in-out;
+
+/* --------------------------------------------------------------------------
+Nav Styles
+-------------------------------------------------------------------------- */
+/* ------------------ http://codepen.io/team/css-tricks/pen/YqaKYR ------------ */
+//nav {
+//  background: $nav-bg;
+//
+//  a {
+//	color: $nav-color-link;
+//	font-size: $nav-font-size;
+//	text-transform: uppercase;
+//	text-decoration: none;
+//	transition: $trans;
+//
+//    display: block;
+//	padding: 0 .5rem 0;
+//	align-self: center;
+//  }
+//
+//  a:hover {
+//	color: $nav-color-hover;
+//    background: darken($nav-bg, 2%);
+//	transition: $trans;
+//  }
+//}
+
+//////////////////////////////////////////////////////////////
+nav {
+  background: $nav-bg;
+}
+
+.navbar {
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.navbar-fixed-top {
+  top: 0;
+
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+.mdl-shadow--8dp {
+  box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2);
+}
+
+  .navbar-brand {
+	float: left;
+	padding-top: .25rem;
+	padding-bottom: 0;
+	margin-right: 1rem;
+	font-size: 1.25rem;
+
+
+	a:link, a:visited, a:hover, a:active {
+	  border-bottom: none;
+	  text-transform: capitalize;
+	  text-decoration: none;
+	}
+
+	p {
+	  color: white;
+	  font-size: 1.3rem;
+	  padding: 0;
+	  margin: 0;
+	}
+
+	h1 {
+	  color: white;
+	  font-size: 1.3rem;
+	  padding: 0;
+	  margin: 0;
+	}
+	span {
+	  color: $nav-color-text;
+	}
+  }
+
+  //////////////////////////////////////////////////////////////
+  .navbar-nav .nav-link {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	align-items: center; /*centers it vertically*/
+  }
+
+
+
+  .navbar-nav .nav-item {
+	//float: none;
+
+	a:link, a:visited {
+	  border-bottom: 1px dotted $nav-color-link;
+	}
+
+	a:hover, a:focus {
+	  border-bottom: 1px solid $nav-color-hover;
+	}
+  }
+  //////////////////////////////////////////////////////////////
+
+  .navigation {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+
+	align-items: center;
+
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+
+	-webkit-flex-flow: row wrap;
+	justify-content: flex-end;
+
+	a {
+	  color: $nav-color-link;
+	  font-size: $nav-font-size;
+	  text-transform: uppercase;
+	  text-decoration: none;
+	  transition: $trans;
+
+	  display: block;
+	}
+
+	a:hover {
+	  //background: darken($nav-bg, 12%);
+	  background: lighten($nav-bg, 5%);
+	  color: $nav-color-hover;
+	  transition: $trans;
+	}
+	&:last-of-type a:hover {
+	  background: lighten($nav-bg, 0%);
+	}
+
+  }
+  ///////////////////////////////////////////////////
+  @media all and (max-width: 860px) {
+
+	.navbar-toggler {
+	  padding: .5rem .75rem;
+	  font-size: 1.25rem;
+	  line-height: 1;
+	  background: none;
+	  border: 1px solid transparent;
+	  border-radius: 0.25rem;
+	}
+
+	.navigation {
+	  -webkit-flex-flow: column wrap;
+	  flex-flow: column wrap;
+	  padding: 0;
+
+	  a {
+		text-align: center;
+		padding: 10px;
+		border-top: 1px solid rgba(255, 255, 255, 0.3);
+		border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	  }
+
+	  li:last-of-type a {
+		border-bottom: none;
+	  }
+	}
+  }

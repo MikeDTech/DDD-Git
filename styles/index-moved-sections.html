@@ -9,7 +9,6 @@
 	<link rel="shortcut icon" href="img/favicon.png">
 	<!--Font / Icons Must Be Placed Before Stylesheets -->
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roberto:300,400,400italic,500,500italic,700,700italic|Material+Icons">
 	<!--Stylesheets -->
 	<link rel="stylesheet" href="styles/material.css">
 
@@ -21,6 +20,7 @@
 	<!-- My Custom CSS -->
 	<link rel="stylesheet" href="styles/app.css">
 	<link rel="stylesheet" href="styles/base.css"> <!-- Sets our Custom Base Styles -->
+	<link rel="stylesheet" href="styles/from-base.css">
 	<link rel="stylesheet" href="styles/nav.css">
 	<link rel="stylesheet" href="styles/contact.css">
 	<link rel="stylesheet" href="styles/portfolio.css">
@@ -70,61 +70,38 @@
 
 
 <!-- Stage Section -->
+
 <section id="stage" class="mdl-shadow--6dp">
-	<div id="stage-caption">
+	<div class="stage-caption">
 		<h1>We develop dream websites.</h1>
-		<!--<h1>Do what you love.<br>We'll develop your website.</h1> -->
-		<!--<h1>Attract customers &amp; increase sales.<br>We'll build &amp; manage your website there.</h1>-->
-		<!--<h1>Attract customers &amp; increase sales.<br>We'll build &amp; manage your website there.</h1>-->
 		<h3>We're professional web designers that develop websites and apps for startups and small businesses</h3>
 		<button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised mdl-button--blue">Talk with a web developer</button>
 		<button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised mdl-button--lightblue">Learn more about our services</button>
 	</div>
 </section>
 
-<!--&lt;!&ndash; Stage Section &ndash;&gt;-->
-
-<!--<div id="stage">-->
-<!--&lt;!&ndash; shopify.ca slogan maker creates slogan text &ndash;&gt;-->
-<!--<div id="stage-caption">-->
-<!--<h1>You dream it<br>We'll develop it</h1>-->
-<!--<h3>We're professional web developers and designers offering affordable web development services for individuals and small businesses</h3>-->
-<!--<a href="#" class="btn btn-primary nav-btn btn-warning">Get Started Now</a>-->
-<!--<button class="mdl-button mdl-js-button mdl-button&#45;&#45;raised mdl-js-ripple-effect mdl-button&#45;&#45;colored">Get Started Now</button>-->
-<!--</div>-->
-<!--</div>-->
-
-<!--&lt;!&ndash; Stage Section &ndash;&gt;-->
-
-<!--<div id="stage">-->
-<!--&lt;!&ndash; shopify.ca slogan maker creates slogan text &ndash;&gt;-->
-<!--<div id="stage-caption">-->
-<!--<h1>Web development services</h1>-->
-<!--<p>We're professional web developers that create stylish websites for individuals and small businesses.</p>-->
-<!--<a href="#" class="btn btn-primary nav-button-blue">Get Started Free</a>-->
-
-<!--</div>-->
-<!--</div>-->
-
 <div class="bg-white rounded mb1 p1 raise-1">
 	<button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised mdl-button--colored">Learn more about our services</button>
 
-<a href="#" class="btn raise-2 right caps">cta!</a>
+	<a href="#" class="btn raise-2 right caps">cta!</a>
 </div>
-<!-- Card Secton -->
 
-<section id="card-section" class="feature-alt card-spacing">
-	<div class="container">
+
+<!-- Card Section -->
+
+<section id="card-section-id" class="section-alt card-spacing">
+	<div class="container-fluid">
 		<div class="row">
-			<div class="feature-content add-padding">
-
+			<div class="section-spacing add-padding">
+				<img src="img/dream.png" alt="">
 				<!--Web Design -->
 				<div class="col-md-4">
-					<div class="demo-card-square mdl-card mdl-shadow--4dp">
+
+					<div class="card-section mdl-card mdl-shadow--4dp">
 						<div class="mdl-card__title web-design mdl-card--expand">
-							<h2 class="mdl-card__title-text">Web Design</h2>
+							<h2 class="mdl-card__title-text">Website Design & Development</h2>
 						</div>
-						<div class="mdl-card__supporting-text">We develop user friendly, optimized websites.  Utilizing the latest programming languages and SEO techniques to get new customers from Google.
+						<div class="mdl-card__supporting-text">We'll develop a new or improve your existing webpage.  user friendly, optimized websites.  Utilizing the latest programming languages and SEO techniques to get new customers from Google.
 						</div>
 						<div class="mdl-card__actions mdl-card--border">
 							<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
@@ -140,14 +117,34 @@
 				</div>
 
 
-				<!-- Web Applications -->
+				<!-- eCommerce -->
 				<div class="col-md-4">
-					<div class="demo-card-square mdl-card mdl-shadow--2dp">
+					<div class="card-section mdl-card mdl-shadow--2dp">
+						<div class="mdl-card__title web-applications mdl-card--expand"><img src="img/money.png" alt="">
+							<h2 class="mdl-card__title-text">Professional eCommerce Sites</h2>
+						</div>
+						<div class="mdl-card__supporting-text">We'll help you setup and sell your products and services online. Grow and manage customers with a eCommerce website developed for your unique businesses unique needs.
+						</div>
+						<div class="mdl-card__actions mdl-card--border">
+							<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+								Get Started
+							</a>
+						</div>
+						<div class="mdl-card__menu">
+							<button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+								<i class="material-icons">share</i>
+							</button>
+						</div>
+					</div>
+				</div>
+
+				<!-- Dynamic Sites & Applications -->
+				<div class="col-md-4"><img src="img/apps.png" alt="">
+					<div class="card-section mdl-card mdl-shadow--4dp">
 						<div class="mdl-card__title web-applications mdl-card--expand">
-							<h2 class="mdl-card__title-text">Web &amp; Applications</h2>
+							<h2 class="mdl-card__title-text">Dynamic Sites & Applications</h2>
 						</div>
-						<div class="mdl-card__supporting-text">
-							We create dynamic, data driven website applications.  Grow and manage your customers with a ecommerce website developed for your businesses unique needs.
+						<div class="mdl-card__supporting-text">We create dynamic, data driven websites and applications. Mobile and tablet friendly solutions to help you find and manage your new clients.  Just let us know how we can help and we'll quickly get you online and running.
 						</div>
 						<div class="mdl-card__actions mdl-card--border">
 							<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
@@ -163,26 +160,6 @@
 				</div>
 
 
-				<!-- Web Hosting -->
-				<div class="col-md-4">
-					<div class="demo-card-square mdl-card mdl-shadow--2dp">
-						<div class="mdl-card__title web-hosting mdl-card--expand">
-							<h2 class="mdl-card__title-text">Web Hosting</h2>
-						</div>
-						<div class="mdl-card__supporting-text">You never have to worry about the online side of your company.  We'll setup and maintain your website.  From registering your domain name, providing updates and hosting your site on our web servers. We take care of everything for you.
-						</div>
-						<div class="mdl-card__actions mdl-card--border">
-							<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-								Get Started
-							</a>
-						</div>
-						<div class="mdl-card__menu">
-							<button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-								<i class="material-icons">share</i>
-							</button>
-						</div>
-					</div>
-				</div>
 			</div>
 		</div>
 	</div>
@@ -191,10 +168,10 @@
 
 <!-- Responsive Web Design #1 Feature Section -->
 
-<section id="feature-one" class="mdl-shadow--6dp">
+<section id="section-one" class="mdl-shadow--6dp">
 	<div class="container">
 		<div class="row">
-			<div class="feature-content feature-center">
+			<div class="section-spacing section-center">
 				<div class="col-md-6">
 					<img src="img/responsive-design.png" alt="">
 				</div>
@@ -211,10 +188,10 @@
 <!-- UI/UX Experience #2 Feature Section -->
 <!-- http://www.fastcodesign.com/3032719/ui-ux-who-does-what-a-designers-guide-to-the-tech-industry -->
 
-<section id="feature-two" class="feature-dark mdl-shadow--6dp">
+<section id="section-two" class="section-dark mdl-shadow--6dp">
 	<div class="container">
 		<div class="row">
-			<div class="feature-content feature-center">
+			<div class="section-spacing section-center">
 				<div class="col-md-6">
 					<h6>User Friendly</h6>
 					<h2>Stylish yet Simple.</h2>
@@ -236,7 +213,7 @@
 <section id="section-three" class="mdl-shadow--6dp">
 	<div class="container">
 		<div class="row">
-			<div class="feature-content feature-center">
+			<div class="section-spacing section-center">
 
 				<!-- Screenshot From http://trypap.com -->
 				<div class="col-lg-5 col-hidden-md-down">
@@ -258,15 +235,15 @@
 
 
 <!-- Portfolio / Our Projects: #4 Feature Section -->
-<section id="dg-container" class="dg-container feature-alt feature-content mdl-shadow--6dp">
+<section id="dg-container" class="dg-container section-alt section-spacing mdl-shadow--6dp">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-offset-1 col-md-10 top top-padding1">
+			<div class="col-md-offset-1 col-md-10 top">
 				<h6>Portfolio &amp; Work Samples</h6>
 				<h2>Past and Present Projects.</h2>
 				<p class="lead">Get a taste of our work.  Try a few samples of our recent projects below.</p>
 			</div>
-			<div class="col-md-offset-1 col-md-10 top-padding2">
+			<div class="col-md-offset-1 col-md-10 carosel-button-padding">
 				<nav id="portfolio" class="">
 					<span class="dg-prev">&lt;</span>
 					<span class="dg-next">&gt;</span>
@@ -295,10 +272,10 @@
 
 
 <!-- xxxxxxxxxxxxxx: #5 Feature Section -->
-<section id="feature-five" class="mdl-shadow--6dp">
+<section id="section-five" class="mdl-shadow--6dp">
 	<div class="container">
 		<div class="row">
-			<div class="feature-content">
+			<div class="section-spacing">
 
 				<div class="col-lg-8 col-lg-offset-2">
 					<h6>Powerfully Packed Action</h6>
@@ -331,10 +308,10 @@
 </section>
 
 <!-- xxxxxxxxxxxxxx: #6 Feature Section -->
-<section id="feature-six" class="feature-dark mdl-shadow--6dp">
+<section id="section-six" class="section-dark mdl-shadow--6dp">
 	<div class="container">
 		<div class="row">
-			<div class="feature-content">
+			<div class="section-spacing">
 
 				<div class="col-lg-6 hidden-md-down">
 					<!-- rebubliquedesmangues.fr -->
@@ -354,10 +331,10 @@
 
 
 <!-- xxxxxxxxxxxxxx: #7 Feature Section -->
-<section id="feature-seven" class="mdl-shadow--6dp">
+<section id="section-seven" class="mdl-shadow--6dp">
 	<div class="container">
 		<div class="row">
-			<div class="feature-content">
+			<div class="section-spacing">
 				<div class="col-lg-8 col-lg-offset-2">
 
 					<h6>100% Money Back Guarantee</h6>
@@ -372,7 +349,7 @@
 </section>
 
 <!-- Full Features List: #8 Feature Section -->
-<section id="section-showcase" class="feature-dark">
+<section id="section-showcase" class="section-dark">
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-md-offset-1 col-md-10">
@@ -462,9 +439,9 @@
 
 
 <!-- Free Quote / Estimate Form -->
-<section id="feature-subscribe" class="feature-dark mdl-shadow--6dp">
+<section id="section-subscribe" class="section-dark mdl-shadow--6dp">
 	<div class="container-fluid">
-		<div class="feature-content feature-center">
+		<div class="section-spacing section-center">
 			<div class="row">
 				<div class="col-md-offset-1 col-md-10">
 					<h6>Let us know how we can help.</h6>
@@ -524,98 +501,34 @@
 	</div>
 </section>
 
-
-<!-- Subscribe Section -->
-<!--<section class="subscribe text-center">-->
-
-<!--<div class="container">-->
-<!--<h1><i class="fa fa-comments fa-2x"></i><span>how we can help you</span></h1>-->
-<!--<form action="#">-->
-
-
-<!--&lt;!&ndash; Name &ndash;&gt;-->
-<!--<div class="mdl-textfield mdl-js-textfield mdl-textfield&#45;&#45;floating-label">-->
-<!--<input class="mdl-textfield__input" type="text" pattern="[A-Z,a-z, ]*" id="name">-->
-<!--<label class="mdl-textfield__label"  for="name">Full Name</label>-->
-<!--<span class="mdl-textfield__error">Please enter letters and spaces only</span>-->
-<!--</div>-->
-
-<!--&lt;!&ndash; Email &ndash;&gt;-->
-<!--<div class="mdl-textfield mdl-js-textfield mdl-textfield&#45;&#45;floating-label">-->
-<!--<input class="mdl-textfield__input" type="text" pattern="[A-Z,a-z, ]*" id="email">-->
-<!--<label class="mdl-textfield__label"  for="email">Email</label>-->
-<!--<span class="mdl-textfield__error">Digits only</span>-->
-<!--</div>-->
-
-<!--&lt;!&ndash; Phone &ndash;&gt;-->
-<!--<div class="mdl-textfield mdl-js-textfield mdl-textfield&#45;&#45;floating-label">-->
-<!--<input class="mdl-textfield__input" type="text" pattern="[0-9,-]*" id="phone">-->
-<!--<label class="mdl-textfield__label"  for="phone">Phone</label>-->
-<!--<span class="mdl-textfield__error">Please enter dashes and numbers only</span>-->
-<!--</div>-->
-
-<!--<br><br>-->
-
-<!-- Button
-  <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
-Button
-</button>
-
-
-   <br>
-
-   <input type="text" name="" value="" placeholder="" required><br>
-<input type="text" name="" value="" placeholder="" required>
-
- <br><br> -->
-
-<!-- Our Process #1 Feature Section -->
-<!-- Send them a document to fill out
-1. Planning
-We setup a meeting to learn about about you and your company.  Your vision, timeline and expectations for your project.
-
-We combine what we’ve learned with our own research and present you with a plan of action.
-
-2. Design
-You’re provided with a “blueprint” of the basic structure and layout of your site.
-
-3. Development
-Your site is coded and main sections are assembled.
-
-4. Testing
-We continue to refine your page and test site functationity and compatibility over different browsers and devices.
-
-5. Deployment
-The final production site is delivered and configured.  You’re site is now online and accessable to you and your customers.
--->
 <!-- Our Process #1 Feature Section  -->
 <section id="design-process">
-	<div class="feature-content">
+	<div class="section-spacing">
 		<div class="container-fluid">
-				<div class="row">
-					<div class="col-md-12">
+			<div class="row">
+				<div class="col-md-12">
 					<img src="img/our-web-development-process.png" alt=""><br><br><br>
-						</div></div></div>
+				</div></div></div>
 		<div class="container-fluid">
-					<div class="row">
+			<div class="row">
 
-					<div class="col-md-offset-1 col-md-10">
-						<h6>The Design Process</h6>
-						<h2>Our Web Development Process</h2>
+				<div class="col-md-offset-1 col-md-10">
+					<h6>The Design Process</h6>
+					<h2>Our Web Development Process</h2>
 					<p class="lead">
 						<br><hr><b>1. Planning</b><br>
-						We setup a meeting to learn about about you and your company.  Your vision, timeline and expectations for your project.  We combine what we’ve learned with our own research and present you with a plan of action.
-						<br><hr><b>
-						2. Design</b><br>
-						You’re provided with a “blueprint” of the basic structure and layout of your site.
+					We setup a meeting to learn about about you and your company.  Your vision, timeline and expectations for your project.  We combine what we’ve learned with our own research and present you with a plan of action.
 					<br><hr><b>
-						3. Development</b><br>
-						Your site is coded and main sections are assembled.
+					2. Design</b><br>
+					You’re provided with a “blueprint” of the basic structure and layout of your site.
 					<br><hr><b>
-						4. Testing</b><br>
-						We continue to refine your page and test site functationity and compatibility over different browsers and devices.<br><hr><b>
-						5. Deployment</b><br>
-						The final production site is delivered and configured.  You’re site is now online and accessable to you and your customers.<br><hr></p>
+					3. Development</b><br>
+					Your site is coded and main sections are assembled.
+					<br><hr><b>
+					4. Testing</b><br>
+					We continue to refine your page and test site functationity and compatibility over different browsers and devices.<br><hr><b>
+					5. Deployment</b><br>
+					The final production site is delivered and configured.  You’re site is now online and accessable to you and your customers.<br><hr></p>
 				</div>
 			</div>
 		</div>
@@ -625,15 +538,15 @@ The final production site is delivered and configured.  You’re site is now onl
 <!-- Ending CTA -->
 <section id="call-to-action2" class="mdl-button--raised mdl--button-colored mdl-shadow--16dp">
 	<div class="container-fluid mdl-button--raised mdl--button-colored mdl-shadow-16dp">
-	<div class="call-to-action">
-			    <h2>Stand out from the competition and increase your revenue.</h2>
-			    <h3>An expert web developer is waiting to help.</h3>
-			    <a href="#">
+		<div class="call-to-action">
+			<h2>Stand out from the competition and increase your revenue.</h2>
+			<h3>An expert web developer is waiting to help.</h3>
+			<a href="#">
 				<button class="mdl-button-cta mdl-button  mdl-js-button mdl-js-ripple-effect mdl-button--raised--light mdl-button--orange mdl-shadow--16dp mdl-typography--button-color">Get Started Now
 				</button>
-			    </a>
-    </div>
+			</a>
 		</div>
+	</div>
 </section>
 <!-- Ending CTA -->
 <section id="call-to-action" class="mdl-button--raised mdl--button-colored mdl-shadow--16dp">
@@ -646,7 +559,7 @@ The final production site is delivered and configured.  You’re site is now onl
 				</button>
 			</a>
 		</div>
-		</div>
+	</div>
 </section>
 
 <!-- Footer -->

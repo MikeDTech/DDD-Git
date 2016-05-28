@@ -33,6 +33,7 @@ $color-subtext-cta: rgba(255,255,255, .87); //rgba(245, 136, 10, .7);
 
 $color-bk-cta: rgb(22, 122, 198);
 
+
 #cta {
   padding: 1rem;
 }
@@ -41,7 +42,8 @@ $color-bk-cta: rgb(22, 122, 198);
 	font-size: 1.3rem;
 	padding: 2.2rem;
 	text-align: center;
-	//background: #2d3b88;
+	background: url("../img/blue-bg-pattern.jpg");
+
 
 	h2 {
 	  color: $color-text-cta;
@@ -58,24 +60,175 @@ $color-bk-cta: rgb(22, 122, 198);
 	}
   }
 
-.bg-white {
-  background-color: #fff;
-}
-.p1 {
-  padding: 1rem;
-}
-.mb1 {
-  margin-bottom: 1rem;
-}
-.raise-1, .raise-hover-1:hover {
-  -webkit-box-shadow: 0 2px 10px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.16);
-  -moz-box-shadow: 0 2px 10px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.16);
-  box-shadow: 0 2px 10px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.16);
-  z-index: 100;
-}
 
-.rounded {
-  -moz-border-radius: 0.3rem;
-  /* -webkit-border-radius: 0.3rem; */
-  /* border-radius: 0.3rem; */
+//.p1 {
+//  padding: 1rem;
+//}
+//.mb1 {
+//  margin-bottom: 1rem;
+//}
+//.raise-1 {
+//  -webkit-box-shadow: 0 2px 10px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.16);
+//  -moz-box-shadow: 0 2px 10px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.16);
+//  box-shadow: 0 2px 10px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.16);
+//  z-index: 100;
+//}
+//
+//.rounded {
+//  -moz-border-radius: 0.3rem;
+//  -webkit-border-radius: 0.3rem;
+//  border-radius: 0.3rem;
+//}
+//
+//.form-clear-blue-bk {
+//  background: rgba(11, 146, 249, 0.18);
+//}
+//
+//
+//.stage-cta-form {
+//  background: rgba(11, 146, 249, 0.18);
+//  box-shadow: 0 2px 10px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.16);
+//  z-index: 100;
+//  border-radius: 0.3rem;
+//
+//  margin-bottom: 1rem;
+//  padding: 1rem;
+//}
+//
+//.bg-blue {
+//  background: #2D3B88;
+//}
+//
+//.bg-clear-blue {
+//  background: rgba(11, 146, 249, 0.18);
+//}
+//
+////////////////////////////////////////
+//
+//.stage-mdl-button {
+//  border-radius: 3px;
+//  color: black;
+//  position: relative;
+//  height: 50px;
+//  margin: 15px;
+//  min-width: 64px;
+//  padding: 0 40px;
+//  display: inline-block;
+//  font-size: 20px;
+//  font-weight: 500;
+//  text-transform: uppercase;
+//  overflow: hidden;
+//  will-change: box-shadow;
+//  transition: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1), background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+//  outline: none;
+//  cursor: pointer;
+//  text-decoration: none;
+//  text-align: center;
+//  vertical-align: middle;
+//  //border: darkblue;
+//  border: #dc7a09;
+//}
+
+
+.snip1447 {
+  font-family: 'Roboto', Arial, sans-serif;
+  color: #fff;
+  position: relative;
+  float: left;
+  overflow: hidden;
+  margin: 10px 1%;
+  min-width: 230px;
+  max-width: 315px;
+  width: 100%;
+  color: #ffffff;
+  text-align: left;
+  line-height: 1.4em;
+  background-color: #141414;
+}
+.snip1447 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+.snip1447 img {
+  max-width: 100%;
+  vertical-align: top;
+  opacity: 0.85;
+}
+.snip1447 figcaption {
+  width: 100%;
+  background-color: #141414;
+  padding: 25px;
+  position: relative;
+}
+.snip1447 figcaption:before {
+  position: absolute;
+  content: '';
+  bottom: 100%;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 55px 0 0 400px;
+  border-color: transparent transparent transparent #141414;
+}
+.snip1447 figcaption a {
+  padding: 5px;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  font-size: 0.7em;
+  text-transform: uppercase;
+  margin: 10px 0;
+  display: inline-block;
+  opacity: 0.65;
+  width: 47%;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+.snip1447 figcaption a:hover {
+  opacity: 1;
+}
+.snip1447 .profile {
+  border-radius: 50%;
+  position: absolute;
+  bottom: 100%;
+  left: 25px;
+  z-index: 1;
+  max-width: 90px;
+  opacity: 1;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+.snip1447 .follow {
+  margin-right: 6%;
+  border-color: #2980b9;
+  color: #2980b9;
+}
+.snip1447 h2 {
+  margin: 0 0 5px;
+  font-weight: 300;
+}
+.snip1447 h2 span {
+  display: block;
+  font-size: 0.5em;
+  color: #2980b9;
+}
+.snip1447 p {
+  margin: 0 0 10px;
+  font-size: 0.8em;
+  letter-spacing: 1px;
+  opacity: 0.8;
+}
+.snip1447:hover:before,
+.snip1447.hover:before {
+  bottom: 0;
+  box-shadow: 0 0 0px white;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+/* Demo purposes only */
+body {
+ // background-color: #212121;
 }

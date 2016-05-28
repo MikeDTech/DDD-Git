@@ -1,0 +1,96 @@
+/* Test Items */
+p {
+  color: green; }
+
+p {
+  color: green; }
+
+.puma-icon {
+  background-image: url("/images/puma.png");
+  border: 2px solid black;
+  cursor: default; }
+
+.sea-slug-icon {
+  background-image: url("/images/sea-slug.png");
+  border: 2px solid blue;
+  cursor: pointer; }
+
+.egret-icon {
+  background-image: url("/images/egret.png");
+  border: 2px solid white;
+  cursor: move; }
+
+.puma-icon {
+  background-image: url("/images/puma.png");
+  border: 2px solid black;
+  cursor: default; }
+
+.sea-slug-icon {
+  background-image: url("/images/sea-slug.png");
+  border: 2px solid blue;
+  cursor: pointer; }
+
+.egret-icon {
+  background-image: url("/images/egret.png");
+  border: 2px solid white;
+  cursor: move; }
+
+p {
+  border-color: blue;
+  border-width: 1px;
+  border-style: dashed; }
+
+p {
+  border-color: blue;
+  border-width: 1px;
+  border-style: dashed; }
+
+.error, .seriousError {
+  border: 1px #f00;
+  background-color: #fdd; }
+
+.seriousError {
+  border-width: 3px; }
+
+.error, .seriousError, .seriousError {
+  border: 1px #f00;
+  background-color: #fdd; }
+
+.seriousError {
+  border-width: 3px; }
+
+.puma-icon {
+  background-image: url("/images/puma.png"); }
+
+.sea-slug-icon {
+  background-image: url("/images/sea-slug.png"); }
+
+.egret-icon {
+  background-image: url("/images/egret.png"); }
+
+.salamander-icon {
+  background-image: url("/images/salamander.png"); }
+
+.puma-icon {
+  background-image: url("/images/puma.png"); }
+
+.sea-slug-icon {
+  background-image: url("/images/sea-slug.png"); }
+
+.egret-icon {
+  background-image: url("/images/egret.png"); }
+
+.salamander-icon {
+  background-image: url("/images/salamander.png"); }
+
+.primary {
+  color: #ff0000;
+  background-color: #00ff00;
+  border-color: #0000ff; }
+
+.secondary {
+  color: #00ff00;
+  background-color: #0000ff;
+  border-color: #ff0000; }
+
+/*# sourceMappingURL=test.css.map */

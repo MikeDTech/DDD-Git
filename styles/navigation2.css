@@ -1,0 +1,111 @@
+/* ==========================================================================
+Navgation
+=========================================================================== */
+/* --------------------------------------------------------------------------
+Nav Variables
+-------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------
+Nav Styles
+-------------------------------------------------------------------------- */
+/* ------------------ http://codepen.io/team/css-tricks/pen/YqaKYR ------------ */
+nav {
+  background: #2D3B88; }
+
+.navbar {
+  padding: 0;
+  margin: 0;
+  position: relative; }
+
+.navbar-fixed-top {
+  top: 0;
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1030; }
+
+.mdl-shadow--8dp {
+  box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2); }
+
+.navbar-brand {
+  float: left;
+  padding-top: .25rem;
+  padding-bottom: 0;
+  margin-right: 1rem;
+  font-size: 1.25rem; }
+  .navbar-brand a:link, .navbar-brand a:visited, .navbar-brand a:hover, .navbar-brand a:active {
+    border-bottom: none;
+    text-transform: capitalize;
+    text-decoration: none; }
+  .navbar-brand p {
+    color: white;
+    font-size: 1.3rem;
+    padding: 0;
+    margin: 0; }
+  .navbar-brand h1 {
+    color: white;
+    font-size: 1.3rem;
+    padding: 0;
+    margin: 0; }
+  .navbar-brand span {
+    color: rgba(255, 255, 255, 0.7); }
+
+.navbar-nav .nav-link {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  /*centers it vertically*/ }
+
+.navbar-nav .nav-item a:link, .navbar-nav .nav-item a:visited {
+  border-bottom: 1px dotted white; }
+.navbar-nav .nav-item a:hover, .navbar-nav .nav-item a:focus {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.7); }
+
+.navigation {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: flex-end; }
+  .navigation a {
+    color: white;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+    display: block; }
+  .navigation a:hover {
+    background: #33439b;
+    color: rgba(255, 255, 255, 0.7);
+    transition: all 0.5s ease-in-out; }
+  .navigation:last-of-type a:hover {
+    background: #2d3b88; }
+
+@media all and (max-width: 860px) {
+  .navbar-toggler {
+    padding: .5rem .75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background: none;
+    border: 1px solid transparent;
+    border-radius: 0.25rem; }
+
+  .navigation {
+    -webkit-flex-flow: column wrap;
+    flex-flow: column wrap;
+    padding: 0; }
+    .navigation a {
+      text-align: center;
+      padding: 10px;
+      border-top: 1px solid rgba(255, 255, 255, 0.3);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+    .navigation li:last-of-type a {
+      border-bottom: none; } }
+
+/*# sourceMappingURL=navigation2.css.map */

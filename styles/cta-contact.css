@@ -1,0 +1,167 @@
+/* ==========================================================================
+ Contact / Subscribe Section
+========================================================================== */
+.form-clear-blue-bk {
+  background: rgba(11, 146, 249, 0.4); }
+
+.stage-mdl-button {
+  border-radius: 3px;
+  color: white;
+  position: relative;
+  height: 50px;
+  margin: 15px;
+  min-width: 64px;
+  padding: 0 40px;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+  overflow: hidden;
+  will-change: box-shadow;
+  transition: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1), background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  vertical-align: middle;
+  border: #F5880A; }
+
+.mdl-textfield {
+  position: relative;
+  font-size: 1.25rem;
+  display: inline-block;
+  box-sizing: border-box;
+  max-width: 100%;
+  margin: 0 .5rem;
+  padding: 2rem 0; }
+
+.mdl-textfield--expandable {
+  min-width: .5rem;
+  width: auto;
+  min-height: .5rem; }
+
+.mdl-textfield__input {
+  /*Text typing in when filling out form*/
+  border: 2px solid #F5880A;
+  border-radius: 4px;
+  display: block;
+  font-size: 1.25rem;
+  padding: .75rem 1rem 1rem 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.28);
+  text-align: left;
+  color: white;
+  padding-left: .75rem;
+  font-weight: 400; }
+
+.mdl-textfield.is-focused .mdl-textfield__input {
+  outline: none; }
+
+.mdl-textfield.is-invalid .mdl-textfield__input {
+  border-color: #d50000;
+  box-shadow: none; }
+
+.mdl-textfield textarea.mdl-textfield__input {
+  display: block; }
+
+/* PLACE HOLDER TEXT =================================*/
+.mdl-textfield__label {
+  /*Placeholder Text Color*/
+  bottom: 0;
+  color: white;
+  font-size: 1.25rem;
+  /*Placeholder Text Size*/
+  left: 0;
+  right: 0;
+  pointer-events: none;
+  position: absolute;
+  display: block;
+  top: 3rem;
+  /* 42px Start TextBox Placeholder Text Distance From Top (Increase Number is Farther Toward Bottom of Box) */
+  padding-left: 1rem;
+  /* Start TextBox Placeholder Text Number of Pixels From Left   */
+  overflow: hidden;
+  white-space: nowrap;
+  text-align: left;
+  font-weight: 400; }
+
+.mdl-textfield.is-dirty .mdl-textfield__label {
+  visibility: hidden; }
+
+.mdl-textfield--floating-label .mdl-textfield__label {
+  transition-duration: 0.2s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); }
+
+fieldset[disabled] .mdl-textfield .mdl-textfield__label,
+.mdl-textfield.is-disabled.is-disabled .mdl-textfield__label {
+  color: white; }
+
+.mdl-textfield--floating-label.is-focused .mdl-textfield__label,
+.mdl-textfield--floating-label.is-dirty .mdl-textfield__label {
+  padding-right: .25rem;
+  /*Remove Padding From Placeholder Text */
+  color: white;
+  font-size: 1rem;
+  /*Increase Font to 18px*/
+  top: 2px;
+  visibility: visible; }
+
+.mdl-textfield--floating-label.is-focused .mdl-textfield__expandable-holder .mdl-textfield__label,
+.mdl-textfield--floating-label.is-dirty .mdl-textfield__expandable-holder .mdl-textfield__label {
+  top: -1rem; }
+
+.mdl-textfield--floating-label.is-invalid .mdl-textfield__label {
+  /*Top Floating Text Label on Error */
+  font-weight: normal;
+  /*Normal Text */ }
+
+.mdl-textfield__label:after {
+  background-color: #F5880A;
+  bottom: 1.5rem;
+  /* Has to Match 48 paddding be 1/2 of it */
+  content: '';
+  height: 2px;
+  left: 40%;
+  position: absolute;
+  transition-duration: 0.2s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  visibility: hidden;
+  width: 10px; }
+
+.mdl-textfield.is-focused .mdl-textfield__label:after {
+  left: 0;
+  visibility: visible;
+  width: 100%;
+  /*Width of Line During Focus */ }
+
+.mdl-textfield.is-invalid .mdl-textfield__label:after {
+  background-color: #d50000; }
+
+.mdl-textfield__error {
+  /*Text That Appears Under Input if there's an error */
+  padding-left: 0;
+  /*Remove Padding From Placeholder Text */
+  color: #d50000;
+  /*Red Font Color */
+  font-weight: normal;
+  /*Bold Text */
+  font-size: 15px;
+  /*Increase Font to 18px*/
+  position: absolute;
+  visibility: hidden; }
+
+.mdl-textfield.is-invalid .mdl-textfield__error {
+  visibility: visible; }
+
+.mdl-textfield__expandable-holder {
+  display: inline-block;
+  position: relative;
+  margin-left: 2rem;
+  transition-duration: 0.2s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  max-width: 0.1px; }
+
+.mdl-textfield__expandable-holder .mdl-textfield__label:after {
+  bottom: 0; }
+
+/*# sourceMappingURL=cta-contact.css.map */

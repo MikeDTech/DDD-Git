@@ -1,7 +1,7 @@
 /* ==========================================================================
  Contact / Subscribe Section
 ========================================================================== */
-#feature-subscribe {
+#section-subscribe {
   background: url("../img/keyboard-bg.jpg") no-repeat center center;
   background-size: cover;
   color: white;
@@ -9,9 +9,12 @@
   display: flex;
   align-items: center;
   /*centers it vertically*/ }
-  #feature-subscribe h6 {
+  #section-subscribe h6 {
     color: rgba(255, 255, 255, 0.87); }
-  #feature-subscribe input[type=text], #feature-subscribe textarea {
+  #section-subscribe p.intro {
+    font-size: 1.25rem;
+    font-weight: 300; }
+  #section-subscribe input[type=text], #section-subscribe textarea {
     font-size: 20px;
     text-transform: none;
     font-weight: normal;
@@ -25,10 +28,10 @@
     /*Space Above For Text After Hover */
     margin-bottom: 0.6rem;
     /*Space Below For Line After Hover */ }
-  #feature-subscribe textarea {
+  #section-subscribe textarea {
     margin-bottom: 0.6rem;
     /*Space Below For Line After Hover */ }
-  #feature-subscribe input[type=submit] {
+  #section-subscribe input[type=submit] {
     background: #167AC6;
     border: solid 1px #167AC6;
     font-size: 1.4rem;
@@ -42,7 +45,7 @@
     -webkit-border-radius: 0.5rem;
     -moz-border-radius: 0.5rem;
     border-radius: 0.5rem; }
-  #feature-subscribe input[type=submit]:hover {
+  #section-subscribe input[type=submit]:hover {
     background: rgba(22, 122, 198, 0.5);
     border: solid 1px rgba(22, 122, 198, 0.87); }
 

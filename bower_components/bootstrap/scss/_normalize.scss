@@ -37,7 +37,6 @@ figcaption,
 figure,
 footer,
 header,
-hgroup,
 main,
 menu,
 nav,
@@ -425,4 +424,12 @@ table {
 td,
 th {
   padding: 0;
+}
+
+
+ol,
+ul,
+dl {
+  margin-top: 0;
+  margin-bottom: 0;
 }

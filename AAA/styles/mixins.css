@@ -1,0 +1,73 @@
+/*
+Error: Undefined variable: "$family".
+        on line 11 of mixins.scss
+
+6: $font-style:'';
+7: $font-variant: '';
+8: 
+9: 
+10: 
+11: @import url("http://fonts.googleapis.com/css?family=#{$family}:300,400,400italic,500,500italic,700,700italic|Material+Icons");
+12: 
+13: 
+14: // #{$selector} will print directly as CSS what you want
+15: 
+16: 
+
+Backtrace:
+mixins.scss:11
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/script/tree/variable.rb:49:in `_perform'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/script/tree/node.rb:50:in `perform'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/script/tree/string_interpolation.rb:93:in `_perform'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/script/tree/node.rb:50:in `perform'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/script/tree/funcall.rb:170:in `perform_arg'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/script/tree/funcall.rb:124:in `block in _perform'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/script/tree/funcall.rb:124:in `each'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/script/tree/funcall.rb:124:in `each_with_index'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/script/tree/funcall.rb:124:in `each'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/script/tree/funcall.rb:124:in `map'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/script/tree/funcall.rb:124:in `_perform'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/script/tree/node.rb:50:in `perform'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:540:in `block in run_interp_no_strip'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:538:in `map'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:538:in `run_interp_no_strip'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:545:in `run_interp'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:523:in `visit_cssimport'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/stack.rb:79:in `block in with_base'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/stack.rb:115:in `with_frame'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:158:in `visit'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:157:in `visit'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:8:in `visit'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/engine.rb:378:in `_render_with_sourcemap'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/engine.rb:295:in `render_with_sourcemap'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:209:in `each'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/plugin.rb:82:in `update_stylesheets'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/exec/sass_scss.rb:363:in `watch_or_update'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/exec/sass_scss.rb:51:in `process_result'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/exec/base.rb:52:in `parse'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/exec/base.rb:19:in `parse!'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.21/bin/scss:13:in `<top (required)>'
+C:/Ruby22/bin/scss:23:in `load'
+C:/Ruby22/bin/scss:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined variable: \"$family\".\A         on line 11 of mixins.scss\A \A 6: $font-style:'';\A 7: $font-variant: '';\A 8: \A 9: \A 10: \A 11: @import url(\"http://fonts.googleapis.com/css?family=#{$family}:300,400,400italic,500,500italic,700,700italic|Material+Icons\");\A 12: \A 13: \A 14: // #{$selector} will print directly as CSS what you want\A 15: \A 16: "; }
