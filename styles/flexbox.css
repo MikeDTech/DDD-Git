@@ -1,0 +1,45 @@
+/* Applies to this HTML
+
+<ul class="navigation">
+  <li><a href="#">Home</a></li>
+  <li><a href="#">About</a></li>
+  <li><a href="#">Products</a></li>
+  <li><a href="#">Contact</a></li>
+</ul>
+
+*/
+.navigation {
+  display: flex;
+  flex-flow: row wrap;
+  position: relative;
+  left: 0;
+  right: 0;
+  top: 0;
+  justify-content: flex-end;
+  /*All Items will squish to end of line */
+  margin: 0;
+  padding: 0;
+  background: deepskyblue;
+  list-style: none; }
+  .navigation a {
+    display: block;
+    padding: 1em;
+    text-decoration: none;
+    color: white; }
+  .navigation:hover {
+    background: #00b7f5; }
+
+@media all and (max-width: 600px) {
+  .navigation {
+    -webkit-flex-flow: column wrap;
+    flex-flow: column wrap;
+    padding: 0; }
+    .navigation a {
+      text-align: center;
+      padding: 10px;
+      border-top: 1px solid red;
+      border-bottom: 1px solid green; }
+    .navigation li:last-of-type a {
+      border-bottom: none; } }
+
+/*# sourceMappingURL=flexbox.css.map */

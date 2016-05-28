@@ -1,0 +1,78 @@
+/* Applies to this HTML
+
+<ul class="navigation">
+  <li><a href="#">Home</a></li>
+  <li><a href="#">About</a></li>
+  <li><a href="#">Products</a></li>
+  <li><a href="#">Contact</a></li>
+</ul>
+
+*/
+
+/////////////////////////////////////////////
+.navigation {
+
+  ///Flexbox Container / Parent ///////////////////////////////////
+
+  display: flex;
+  flex-flow: row wrap;
+  position: relative;
+  left: 0;
+  right: 0;
+  top: 0;
+  justify-content: flex-end; /*All Items will squish to end of line */
+
+  margin: 0; 	// Remove or Define Margin and Padding so it's not inherited etc....
+  padding: 0;
+
+
+// ---
+  background: deepskyblue;
+  list-style: none;
+
+  /////////////////////////////
+
+
+/////// First Child Element | Link Boxes /////////////////
+  a {
+	display: block;
+	padding: 1em; // We use Padding and Block to create spacing around Nav Items
+
+
+// ---
+	text-decoration: none;
+	color: white;
+  }
+
+  &:hover {
+	background: darken(deepskyblue, 2%);
+  }
+}
+
+
+
+
+
+////////// Media Queries///////////////////////////
+// Defines how Navigation changes once it hits the breakpoint of 600px
+// So from 0px - 600px wide these apply
+// Small Screens - Navigation Link Blocks Stack
+@media all and (max-width: 600px) {
+  .navigation {
+	-webkit-flex-flow: column wrap;
+	flex-flow: column wrap;
+	padding: 0;
+
+	a {
+	  text-align: center;
+	  padding: 10px;
+	  border-top: 1px solid red;
+	  border-bottom: 1px solid green;
+	}
+
+	li:last-of-type a {
+	  border-bottom: none;
+	}
+  }
+}
+////////////////////////////////////////////////

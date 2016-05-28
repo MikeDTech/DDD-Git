@@ -1,0 +1,97 @@
+/* ==========================================================================
+Navgation
+=========================================================================== */
+/* --------------------------------------------------------------------------
+Nav Variables
+-------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------
+Nav Styles
+-------------------------------------------------------------------------- */
+nav {
+  padding: 0;
+  margin: 0;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 2000;
+  background: #2D3B88;
+  box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2); }
+  nav .navigation {
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.18);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    align-items: center; }
+    nav .navigation * {
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      -webkit-transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out; }
+    nav .navigation .link, nav .navigation .hover, nav .navigation .logo a:hover, nav .navigation li a:hover, nav .navigation .logo a, nav .navigation li a {
+      text-decoration: none;
+      border: .1rem solid transparent;
+      border-top: none;
+      color: white;
+      font-size: 1rem;
+      font-weight: 500;
+      letter-spacing: -.02rem;
+      display: block; }
+    nav .navigation .hover, nav .navigation .logo a:hover, nav .navigation li a:hover {
+      color: rgba(255, 255, 255, 0.7);
+      border: .1rem solid transparent;
+      border-top: none; }
+    nav .navigation .logo {
+      flex: auto;
+      max-height: 40px;
+      min-height: 40px; }
+      nav .navigation .logo h1 {
+        margin: 0;
+        padding: 0;
+        color: white;
+        font-size: 1.25rem;
+        letter-spacing: -0.02em;
+        font-weight: 400; }
+        nav .navigation .logo h1 span {
+          color: rgba(255, 255, 255, 0.7); }
+        nav .navigation .logo h1 em {
+          color: rgba(255, 255, 255, 0.7);
+          font-size: .8rem; }
+    nav .navigation li {
+      list-style: none;
+      padding: 0 .04rem;
+      text-transform: uppercase;
+      background: transparent; }
+      nav .navigation li a {
+        border-bottom: .1rem solid transparent;
+        background: #0B92F9;
+        padding: 1rem .75rem; }
+      nav .navigation li a:hover {
+        border-bottom: .1rem solid orange;
+        color: orange;
+        background: black;
+        padding: 1rem .75rem; }
+
+p {
+  color: black;
+  font-size: 60px; }
+
+@media all and (max-width: 600px) {
+  .navigation {
+    -webkit-flex-flow: column wrap;
+    flex-flow: column wrap;
+    padding: 0; }
+
+  .navigation a {
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+
+  .navigation li:last-of-type a {
+    border-bottom: none; } }
+
+/*# sourceMappingURL=nav-works.css.map */
